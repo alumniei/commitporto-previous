@@ -1,0 +1,272 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300");
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #545454;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+section#landing{
+    min-height: 100%;
+    height: 100vh;
+    background-image: url(images/porto.jpg);
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+#landing-overlay {
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#main-logo {
+    display: block;
+    margin: 0 auto;
+    transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%);
+    width: 40%;
+    -moz-animation-name: dropLogo;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1s;
+
+    -webkit-animation-name: dropLogo;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+
+    animation-name: dropLogo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+
+.info {
+    display: block;
+    margin: 0 auto;
+    transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%);
+    width: 80%;
+    opacity: 1;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    font-weight: 700;
+    -moz-animation-name: upInfo;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 2s;
+
+    -webkit-animation-name: upInfo;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 2s;
+
+    animation-name: upInfo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+.main-info-container {
+    position: absolute;
+    top: 30%;
+    /*left:50%;*/
+    width: 100%;
+}
+
+.info.date {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+input#mce-EMAIL {
+    visibility: hidden;
+    height: 40px;
+    width: 0%;
+    font-size: 1rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -webkit-transition: all 0.6s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.6s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    position: absolute;
+    bottom: 55px;
+    display: inline-block;
+}
+
+input#mce-EMAIL.subscribe {
+    visibility: visible;
+    width: 30%;
+    padding: 0 20px;
+}
+
+#btn-subscribe {
+    display: block;
+    background-color: #33BEC2;
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+    width: 200px;
+    height: 40px;
+    padding: 0 20px;
+    margin: 20px auto;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    overflow: hidden;
+    transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%);
+    -webkit-transition: all 0.4s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.4s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+#btn-subscribe.noshow{
+    opacity: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+#mc-embedded-subscribe {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    background-color: #33BEC2;
+    color: #fff;
+    border: 0;
+    height: 40px;
+    width: 200px;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+    -webkit-appearence: none;
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -webkit-transition: all 0.6s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.6s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+#mc-embedded-subscribe.subscribe {
+    transform: translate(0%,-20%);
+    -webkit-transform: translate(0%,-20%);
+    opacity: 1;
+}
+
+#mce-responses {
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    text-align: center;
+    color: #fff;
+}
+
+#mce-responses a, #mce-responses a:visited, #mce-responses a:hover, #mce-responses a:active{
+    color: #fff;
+}
+
+
+/** ANIMATIONS **/
+@-moz-keyframes dropLogo {
+    0% {
+        -moz-transform: translate(0%,-200%);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: translate(0%,-50%);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes dropLogo {
+    0% {
+        -webkit-transform: translate(0%,-200%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(0%,-50%);
+        opacity: 1;
+    }
+}
+@keyframes dropLogo {
+    0% {
+        transform: translate(0%,-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0%,-50%);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes upInfo {
+    0% {
+        -moz-transform: translate(0%, 0%);
+        opacity: 0;
+    }
+    50% {
+        -moz-transform: translate(0%, 0%);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: translate(0%,-50%);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes upInfo {
+    0% {
+        -webkit-transform: translate(0%,0%);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translate(0%,0%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(0%,-50%);
+        opacity: 1;
+    }
+}
+@keyframes upInfo {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0%, 0%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0%,-50%);
+        opacity: 1;
+    }
+}
+
+
+/** media-xs */
+@media screen and (max-width:767px) {
+    .main-info-container {
+        top: 10%;
+    }
+    #main-logo {
+        width: 80%;
+    }
+    input#mce-EMAIL.subscribe {
+        visibility: visible;
+        width: 60%;
+        padding: 0 20px;
+    }
+}
