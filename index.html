@@ -9,6 +9,7 @@
         <link href="./foundation/foundation.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="./foundation/foundation-icons.css" rel="stylesheet" />
         <link rel="stylesheet" href="main.css">
+                <script src="https://maps.googleapis.com/maps/api/js"></script>
     </head>
     <body>
         <section id="landing">
@@ -76,8 +77,30 @@
                 </div>
             </div>
         </section>
-        <section id="venue">
+
+        <section id="venue" class="section">
+            <div class="row">
+                <div id="venue-city" class="venue-text">
+                    PORTO. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div class="venue-text" id="venue-description">
+                    Auditorium of the Faculty of Engineering of the University of Porto
+                </div>
+                <div class="venue-map" id="map-canvas"></div>
+                <div class="venue-text" id="venue-address">
+                    Rua Dr. Roberto Frias, s/n, Porto, Portugal<br/>
+                    41º 10’ 41’’ N, 8º 24’ 7’’ O
+                </div>
+                <div class="venue-text" id="venue-access">
+                    BUS<br/>
+                    204, 300, 301, 803 - stop Faculdade de Engenharia<br/>
+                    205, 305, 505, 506, 603, 604, 704, 705, 706, 707, 804 - stop Hospital de S. João<br/>
+                    METRO<br/>
+                    Line D - stop IPO
+                </div>
+            </div>
         </section>
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="./foundation/foundation.js"></script>
         <script type="text/javascript" src="main.js"></script>

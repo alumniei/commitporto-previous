@@ -63,6 +63,20 @@ section#landing{
     font-size: 0.75rem;
 }
 
+#map-canvas {
+    height: 400px;
+}
+
+#venue .venue-text {
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#venue .venue-map {
+    margin: 2rem 0;
+}
+
 #main-logo {
     display: block;
     margin: 0 auto;
@@ -304,3 +318,21 @@ input#mce-EMAIL.subscribe {
         padding: 0 20px;
     }
 }
+
+function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var coordinates = new google.maps.LatLng(41.177875,-8.597916);
+    var mapOptions = {
+        center: coordinates,
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+        position: coordinates,
+        map: map,
+        title: 'Hello World!'
+    });
+}
+google.maps.event.addDomListener(window, 'load', initialize);       
+
