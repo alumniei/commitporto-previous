@@ -17,7 +17,8 @@ function initializeLocationMap() {
   var markerImg = "images/map-marker.png";
   var mapOptions = {
     zoom: 16,
-    center: Latlng
+    center: Latlng,
+    scrollwheel: false
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
