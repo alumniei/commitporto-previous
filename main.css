@@ -364,6 +364,11 @@ section#behind{
     border-radius: 10px;
 }
 
+input.sponsor-image {
+  max-height: 80px;
+  max-width: 100%;
+}
+
 .white{
     color: #fff;
 }
