@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
 function initializeLocationMap() {
   var Latlng = new google.maps.LatLng(41.177875,-8.597916);
-  var markerImg = "images/map-marker.png";
+  var markerImg = "http://c.dryicons.com/images/icon_sets/colorful_stickers_part_6_icons_set/png/64x64/map_blue.png";
   var mapOptions = {
     zoom: 16,
     center: Latlng,

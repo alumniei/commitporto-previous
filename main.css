@@ -13,6 +13,7 @@ body {
     line-height: 1.5em;
     color: black;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 .section:not(:first-child) {
@@ -47,8 +48,42 @@ section#landing{
     background-color: rgba(0,0,0,0.4);
 }
 
+section#about{
+    background-color: #2DBFC2;
+    margin: -120px -4px 0px;
+    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+}
+
+#about-container{
+    padding: 100px 0;
+    color: #fff;
+    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+}
+
+.section-title{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2DBFC2;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
 #speakers-plan .columns {
     margin: 2rem 0;
+}
+
+#speakers-plan .columns:not(:first-of-type){
+    height: 500px;
 }
 
 #speakers-plan .speaker-name,
@@ -69,6 +104,32 @@ section#landing{
 
 section#venue {
     padding: 3rem 0;
+    margin-top: 50px;
+}
+
+.venue-container{
+    background-color: #2DBFC2;
+    margin: -120px -4px 0px;
+    transform: rotate(2deg) scale(1) skew(2deg) translate(0px);
+    -webkit-transform: rotate(2deg) scale(1) skew(2deg) translate(0px);
+    -moz-transform: rotate(2deg) scale(1) skew(2deg) translate(0px);
+    -o-transform: rotate(2deg) scale(1) skew(2deg) translate(0px);
+    -ms-transform: rotate(2deg) scale(1) skew(2deg) translate(0px);
+    height: 500px;
+}
+
+.venue-container div{
+    padding: 50px 0;
+    color: #fff;
+    transform: rotate(358deg) scale(1) skew(-2deg) translate(0px);
+    -webkit-transform: rotate(358deg) scale(1) skew(-2deg) translate(0px);
+    -moz-transform: rotate(358deg) scale(1) skew(-2deg) translate(0px);
+    -o-transform: rotate(358deg) scale(1) skew(-2deg) translate(0px);
+    -ms-transform: rotate(358deg) scale(1) skew(-2deg) translate(0px);
+}
+
+#venue .venue-location-title{
+    margin-top: -100px;
 }
 
 #venue .venue-text {
@@ -79,6 +140,7 @@ section#venue {
 
 #venue .venue-map {
     margin: 2rem 0;
+    top: -170px;
 }
 
 .google-maps {
@@ -260,6 +322,51 @@ input#mce-EMAIL.subscribe {
     color: #fff;
 }
 
+section#behind{
+    background-color: #2DBFC2;
+    color: #fff;
+}
+
+#contacts h1{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+#contacts p{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#contacts a, #contacts a:hover, #contacts a:active, #contacts a:visited{
+    color: #fff;
+}
+
+#contacts div{
+    text-align: center;
+}
+
+#contacts div a{
+    margin: 0 10px;
+}
+
+#sponsors{
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.white{
+    color: #fff;
+}
 
 /** ANIMATIONS **/
 @-moz-keyframes dropLogo {
@@ -350,22 +457,9 @@ input#mce-EMAIL.subscribe {
         width: 60%;
         padding: 0 20px;
     }
-}
-
-function initialize() {
-    var mapCanvas = document.getElementById('map-canvas');
-    var coordinates = new google.maps.LatLng(41.177875,-8.597916);
-    var mapOptions = {
-        center: coordinates,
-        zoom: 16,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+    .venue-container {
+      height: 750px;
+      padding: 0 20px;
     }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-    var marker = new google.maps.Marker({
-        position: coordinates,
-        map: map,
-        title: 'Hello World!'
-    });
 }
-google.maps.event.addDomListener(window, 'load', initialize);       
 
