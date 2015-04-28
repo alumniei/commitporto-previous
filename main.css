@@ -364,6 +364,10 @@ section#behind{
     border-radius: 10px;
 }
 
+#about-alumni{
+    margin: 0 0 40px 0;
+}
+
 input.sponsor-image {
   max-height: 80px;
   max-width: 100%;
