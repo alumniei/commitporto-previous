@@ -102,6 +102,59 @@ section#about{
     font-size: 0.75rem;
 }
 
+#speakers-plan .speaker-box {
+  position: relative;
+}
+
+#speakers-plan .speaker-box:hover .speak-title {
+  visibility: visible;
+  opacity: 1;
+}
+
+#speakers-plan .speak-title {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 12px;
+    background: rgba(51, 190 , 190, 0.5);
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#speakers-plan .speak-title p{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#speakers-plan .speaker-photo {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+    
+	border: 12px solid #efefef;
+    
+	vertical-align: middle;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	overflow: hidden;
+}
+
 section#venue {
     padding: 3rem 0;
     margin-top: 50px;
@@ -136,6 +189,10 @@ section#venue {
     font-size: 0.85rem;
     text-align: center;
     margin: 1rem 0;
+}
+
+#venue .venue-access-container{
+    background-color: #2DBFC2;
 }
 
 #venue .venue-map {
