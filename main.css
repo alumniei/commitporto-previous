@@ -32,16 +32,23 @@ p {
 
 p strong {
     color: white;
+    font-size: 1.1rem;
+}
+
+section .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .section-title{
     color: #2DBFC2;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 1rem;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
 }
 
 .fullWidth {
@@ -245,7 +252,6 @@ header .by {
 }
 
 #about-container {
-    padding: 6rem 0;
     color: #fff;
     transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
     -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
@@ -258,13 +264,13 @@ header .by {
 
 /****************speakers****************/
 
-#speakers-plan .columns {
-    margin: 2rem 0;
+#speakers-plan {
+    margin-bottom: 7rem;
     text-align: center;
 }
 
-#speakers-plan .columns:not(:first-of-type){
-    height: 500px;
+#speakers-plan .row {
+    padding-top: 1rem;
 }
 
 #speakers-plan .speaker-name,
@@ -372,10 +378,6 @@ header .by {
     -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
 }
 
-.venue-container .section-title {
-    margin-bottom: 2rem;
-}
-
 /*#venue .venue-text {
     font-size: 0.85rem;
     text-align: center;
@@ -418,72 +420,99 @@ header .by {
 
 /****************registration****************/
 
-#registration .section-title {
-    margin: 2rem 0;
+#registration {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 #registration .registration-container {
     color: white;
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 3rem;
+}
+
+#registration .registration-container .fi-lock {
+    font-size: 3.5rem;
 }
 
 /****************sponsors****************/
 
-#sponsors{
+.sponsors{
     background-color: rgba(255, 255, 255, 0.65); 
     margin-top: 20px;
+     margin:  1rem -1rem 0;
+    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
 }
-/*
-#about-alumni {
-    margin: 0 0 40px 0;
-}*/
 
-#sponsors .sponsor-image {
+.sponsors .sponsors-container {
+    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    margin: 0 auto;
+} 
+
+.sponsors .sponsor-image {
   padding: 0 2rem;
   max-width: 100%;
-  max-height: 80px;
+  max-height: 50px;
 }
 
 #sponsors .sponsors-row {
-    margin-top: 1rem;
-}
-
-/*#behind{
-    background-color: #2DBFC2;
-    color: #fff;
-}
-
-#contacts h1{
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 1rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-}
-
-#contacts p{
-    color: #fff;
-    text-align: center;
-    padding-top: 1rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-#contacts a, #contacts a:hover, #contacts a:active, #contacts a:visited{
-    color: #fff;
-}
-
-#contacts div{
+    padding: 1rem 4rem 0 4rem;
     text-align: center;
 }
 
-#contacts div a{
-    margin: 0 10px;
-}*/
+.sponsors .sponsors-container .diamond {
+    height: 170px;
+    line-height: 170px;
+}
+
+.sponsors .sponsors-container .silver {
+    height: 100px;
+    line-height: 100px;
+}
+
+.sponsors .sponsors-container .institutional {
+    height: 180px;
+    line-height: 180px;
+}
+
+.sponsors .sponsors-container .institutional .sponsor-image {
+    max-height: 70px;
+}
 
 
+/****************behind****************/
+#behind {
+    text-align: center;
+}
+
+#behind .container {
+    padding-bottom: 2.5rem;
+}
+
+#behind a i {
+    margin: 0 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+#behind .institutional {
+    margin: 0 auto;
+}
+
+#behind .institutional .image {
+    max-width: 100%;
+    max-height: 3rem;
+    max-width: 8rem;
+}
 
 /****************animations****************/
 /*@-moz-keyframes dropLogo {
@@ -517,7 +546,7 @@ header .by {
     }
 }*/
 
-@-moz-keyframes upInfo {
+/*@-moz-keyframes upInfo {
     0% {
         -moz-transform: translate(0%, 0%);
         opacity: 0;
@@ -558,35 +587,4 @@ header .by {
         transform: translate(0%,-50%);
         opacity: 1;
     }
-}
-
-/*
-
-
-
-.white{
-    color: #fff;
-}
-
-
-*/
-
-/** media-xs */
-/*@media screen and (max-width:767px) {
-    .main-info-container {
-        top: 10%;
-    }
-    #main-logo {
-        width: 80%;
-    }
-    input#mce-EMAIL.subscribe {
-        visibility: visible;
-        width: 60%;
-        padding: 0 20px;
-    }
-    .venue-container {
-      height: 750px;
-      padding: 0 20px;
-    }
-}
-*/
+}*/
