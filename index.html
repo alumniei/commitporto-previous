@@ -6,21 +6,21 @@
         <title>Commit Porto - Tech Conference 2015</title>
         <meta name="description" content="Commit Porto is an IT multi-disciplinary conference will be held for the first time. It will bring together IT professionals from different areas talking about their experience tackling challenges with the latest technology, providing an excellent opportunity to knowledge sharing and inherently promoting Porto as a vibrant and dynamic city for technology-based companies.">
         <link rel="shortcut icon" type="image/ico" href="favico.ico">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="./foundation/foundation.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="./foundation/foundation-icons.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="main.css">
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
     </head>
     <body>
-        <section id="landing">
-            <div id="landing-overlay">
-                <div class="main-info-container">
-                    <img id="main-logo" class="noshow" src="images/commit-white.png">
-                    <div class="info date noshow">June 20th, 2015</div>
-                    <div class="info noshow">Committed to Technology.</div>
-                    <div class="info noshow">Committed to Porto.</div>
-                    <div id="btn-subscribe" class="noshow">Subscribe to newsletter</div>
+        <header>
+            <h1>commitPorto</h1>
+            <div class="header">
+                <img id="main-logo" class="noshow" src="images/commit-white.png">
+                <div class="info noshow">Committed to Technology</div>
+                <div class="info noshow">Committed to Porto</div>
+                <div class="date noshow">June 20th</div>
+                <div class="subscribe">
+                    <div id="btn-subscribe">Subscribe to newsletter</div>
                     <!-- Begin MailChimp Signup Form -->
                     <form action="//alumnileic.us8.list-manage.com/subscribe/post?u=b3a888ccbe0a297e91a4a9921&amp;id=41fb88c276" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <input type="email" value="" placeholder="e-mail address" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -34,11 +34,16 @@
                     <!--End mc_embed_signup-->
                 </div>
             </div>
-        </section>
+            <div class="by">
+                by:
+                <br/>
+                <img src="images/alumniei-02.png">
+            </div>
+        </header>
         <section id="about" class="section">
-            <div id="about-container">
-                <p class="row">
-                    <strong>Commit Porto</strong> is a tech conference to be held in <strong>Porto on June 20th</strong>, bringing together both international and Portuguese professionals from different areas talking about their experience tackling challenges in software development with the latest technologies!
+            <div id="about-container" class="row">
+                <p>
+                    <strong>Commit Porto</strong> is a tech conference to be held in Porto on June 20th, bringing together both international and Portuguese professionals from different areas talking about their experience <strong>tackling challenges</strong> in software development with the <strong>latest technologies!</strong>
                     <br/>
                     It will be an excellent opportunity to knowledge sharing and inherently promote Porto as a vibrant and dynamic city for technology-based companies.
                 </p>
@@ -47,13 +52,41 @@
         <section id="speakers-plan" class="section">
             <div class="row">
                 <div class="columns small-12">
-                    <div class="section-title">
+                    <h2 class="section-title">
                         Speakers
-                    </div>
+                    </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="columns medium-4 small-12">
+                    <div class="speaker-box">
+                        <div class="speaker-photo">
+                            <img class="speaker-image" src="images/speakers/jean.jpg">
+                        </div>
+                        <!-- <div class="speak-title">
+                            <p>Swift, Apple's new programming languange. Its purpose, present state, (possible) future and what it all means to iOS developers, experienced and newcomers alike.</p>
+                        </div> -->
+                    </div>
+                    <div class="speaker-name">Jean Vanderdonckt</div>
+                    <div class="speaker-title">Full Professor @ Université Catholique de Louvain</div>
+                    <div class="speaker-social">
+                        <a href="https://be.linkedin.com/in/jeanvdd" target="_blank"><i class="fi-social-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="columns medium-4 small-12">
+                    <div class="speaker-box">
+                        <div class="speaker-photo">
+                            <img class="speaker-image" src="images/speakers/user.png">
+                        </div>
+                        <!-- <div class="speak-title">
+                            <p>Swift, Apple's new programming languange. Its purpose, present state, (possible) future and what it all means to iOS developers, experienced and newcomers alike.</p>
+                        </div> -->
+                    </div>
+                    <div class="speaker-name">to be announced</div>
+                    <div class="speaker-title">...</div>
+                </div>
+                <div class="columns medium-4 small-12"></div>
+                <!-- <div class="columns medium-4 small-12">
                     <div class="speaker-box">
                         <div class="speaker-photo">
                             <img class="speaker-image" src="images/speakers/alvaro_monteiro.jpg">
@@ -73,12 +106,12 @@
                         <div class="speak-title"><p>Challenges when sailing in emergent markets</p></div>
                     </div>
                     <div class="speaker-name">Gonçalo Queirós</div>
-                    <div class="speaker-title">Team Leader @ Porto Tech Center (project Kaymu)</div>
+                    <div class="speaker-title">Team Leader @ Porto Tech Center</div>
                 </div>
                 <div class="columns medium-4 small-12">
                     <div class="speaker-box">
                         <div class="speaker-photo">
-                            <img class="speaker-image" src="images/speakers/goncalo_silva.png">
+                            <img class="speaker-image" src="images/speakers/goncalo_silva.jpg">
                         </div>
                         <div class="speak-title">
                             <p>Material design in practice</p>
@@ -106,43 +139,123 @@
                     </div>
                     <div class="speaker-name">Matthias Weismann</div>
                     <div class="speaker-title">Technical Lead for Shopping Data Quality team @ Google</div>
-                </div>
+                </div> -->
             </div>
         </section>
-        <section id="venue" class="section fullWidth">
-            <div class="row fullWidth" id="venue-row">
-                <div class="venue-container">
-                    <div class="white section-title columns small-12 medium-8 medium-offset-2">
-                        Location
-                    </div>
-                    <div id="venue-city" class="venue-text columns small-12 medium-8 medium-offset-2">
-                         <p>Porto is one of Europe's oldest tourist destinations. Its wealth of monumental and artistic heritage, Port Wine, open-air leisure spaces and cultural life are just some of the reasons to visit this city.</p>
+        <section id="venue" class="section">
+            <div class="venue-container">
+                <h2 class="section-title">
+                    Location
+                </h2>
+                <div id="venue-city" class="venue-text">
+                     <p>Porto is one of Europe's oldest tourist destinations. Its wealth of monumental and artistic heritage, Port Wine, open-air leisure spaces and cultural life are just some of the reasons to visit this city.</p>
 
-                         <p>At any time of the day, 365 days of the year, Porto has a special charm for anyone visiting the city for the first time, as it does for those coming back for a second visit, to discover a city that is simultaneously modern and authentic. </p>
-                    </div>
-                    <div class="venue-text columns small-12" id="venue-description">
-                        Auditorium of the Faculty of Engineering of the University of Porto
-                    </div>
+                     <p>At any time of the day, 365 days of the year, Porto has a special charm for anyone visiting the city for the first time, as it does for those coming back for a second visit, to discover a city that is simultaneously modern and authentic. </p>
                 </div>
-                <div class="venue-map columns small-12" id="map-canvas"></div>
-                <div class="section-title venue-location-title columns small-12 medium-8 medium-offset-2">
-                        How to get there?
-                    </div>
-                <div class="venue-text columns small-12" id="venue-address">
-                    Rua Dr. Roberto Frias, s/n, Porto, Portugal<br/>
-                    41º 10’ 41’’ N, 8º 24’ 7’’ O
+               <!--  <div class="venue-text columns small-12" id="venue-description">
+                    Auditorium of the Faculty of Engineering of the University of Porto
+                </div> -->
+            </div>
+            <!-- <div class="venue-map columns small-12" id="map-canvas"></div>
+            <div class="section-title venue-location-title columns small-12 medium-8 medium-offset-2">
+                    How to get there?
                 </div>
-                <div class="venue-text columns small-12" id="venue-access">
-                    BUS<br/>
-                    204, 300, 301, 803 - stop Faculdade de Engenharia<br/>
-                    205, 305, 505, 506, 603, 604, 704, 705, 706, 707, 804 - stop Hospital de S. João<br/>
-                    METRO<br/>
-                    Line D (Yellow) - stop IPO
+            <div class="venue-text columns small-12" id="venue-address">
+                Rua Dr. Roberto Frias, s/n, Porto, Portugal<br/>
+                41º 10’ 41’’ N, 8º 24’ 7’’ O
+            </div>
+            <div class="venue-text columns small-12" id="venue-access">
+                BUS<br/>
+                204, 300, 301, 803 - stop Faculdade de Engenharia<br/>
+                205, 305, 505, 506, 603, 604, 704, 705, 706, 707, 804 - stop Hospital de S. João<br/>
+                METRO<br/>
+                Line D (Yellow) - stop IPO
+            </div> -->
+        </section>
+        <section id="registration">
+            <h2 class="section-title">
+                Registration
+            </h2>
+            <div class="registration-container">
+                <i class="fi-lock"></i> comming soon ...
+            </div>
+        </section>
+        <section id="sponsors">
+            <h2 class="section-title">
+                Sponsors
+            </h2>
+            <div class="row sponsors-row">    
+                <div class="small-6 medium-4 columns">
+                    <a href="http://www.boldint.com/" target="_blank">
+                        <input class="sponsor-image" type="image" src="images/sponsors/diamond_bold.png"   >
+                    </a>
+                </div>
+                <div class="small-6 medium-4 columns">
+                    <a href="http://www.deloitte.pt" target="_blank">
+                        <input class="sponsor-image" type="image" src="images/sponsors/diamond_deloitte.png"   >
+                    </a>
+                </div>
+                <div class="small-6 medium-4 columns">
+                    <a href="http://www.sonae.pt" target="_blank">
+                        <input class="sponsor-image" type="image" src="images/sponsors/diamond_sonae.png"   >
+                    </a>
                 </div>
             </div>
+            <div class="row sponsors-row">
+                <div class="small-6 medium-3 columns">
+                    <a href="http://www.criticalmanufacturing.com" target="_blank">
+                        <input class="sponsor-image" type="image" src="images/sponsors/silver_critical.png"   >
+                    </a>
+                </div>
+            </div>
+            <div class="row sponsors-row">
+                <div class="small-6 medium-3 columns">
+                    <a href="http://www.porto.pt" target="_blank">
+                        <input class="sponsor-image" type="image" src="images/sponsors/partner_cmporto.jpg"   >
+                    </a>
+                </div>
+                 <div class="small-6 medium-3 columns">
+                    <a href="http://www.fe.up.pt" target="_blank">
+                        <input class="sponsor-image" type="image" src="images/sponsors/partner_feup.png"   >
+                    </a>
+                </div>
+                <div class="small-6 medium-3 columns">
+                    <a href="http://www.up.pt" target="_blank">
+                        <input class="sponsor-image" type="image" src="images/sponsors/partner_up.png"   >
+                    </a>
+                </div>
+            </div>
+            <!-- <div id="about-alumni" class="columns small-12">
+                <div class="about-logo">
+                    <img src="images/alumni-placeholder.png">
+                </div>
+            </div>
+            
+            <div class="row" id="sponsors-row-4">
+                <div class="small-6 medium-3 columns">
+                    <a href="http://www.criticalmanufacturing.com">
+                        <input class="sponsor-image" type="image" src="images/sponsors/silver_critical.png"   >
+                    </a>
+                </div>
+                <div class="small-6 medium-3 columns">
+                    <a href="http://www.porto.pt">
+                        <input class="sponsor-image" type="image" src="images/sponsors/partner_cmporto.jpg"   >
+                    </a>
+                </div>
+                <div class="small-6 medium-3 columns">
+                    <a href="http://www.fe.up.pt">
+                        <input class="sponsor-image" type="image" src="images/sponsors/partner_feup.png"   >
+                    </a>
+                </div>
+                <div class="small-6 medium-3 columns">
+                    <a href="http://www.up.pt">
+                        <input class="sponsor-image" type="image" src="images/sponsors/partner_up.jpg"   >
+                    </a>
+                </div>
+            </div> -->
         </section>
         <section id="behind" class="section">
-            <div class="row" id="behind-row">
+           <!--  <div class="row" id="behind-row">
                 <div id="keep-in-touch" class="columns medium-12 small-12" style="align: bottom;">
                     <div class="behind-text" id="contacts">
                         <h1>KEEP IN TOUCH</h1>
@@ -155,58 +268,13 @@
                         
                     </div>
                  </div>
-            </div>
-            <div id="sponsors" align="center" >
-                <div id="about-alumni" class="columns small-12">
-                    <div class="about-logo">
-                        <img src="images/alumni-placeholder.png">
-                    </div>
-                </div>
-                <div class="row" id="sponsors-row-3">    
-                    <div class="small-6 medium-4 columns">
-                        <a href="http://www.boldint.com/">
-                            <input class="sponsor-image" type="image" src="images/sponsors/diamond_bold.png"   >
-                        </a>
-                    </div>
-                    <div class="small-6 medium-4 columns">
-                        <a href="http://www.deloitte.pt">
-                            <input class="sponsor-image" type="image" src="images/sponsors/diamond_deloitte.jpg"   >
-                        </a>
-                    </div>
-                    <div class="small-6 medium-4 columns">
-                        <a href="http://www.sonae.pt">
-                            <input class="sponsor-image" type="image" src="images/sponsors/diamond_sonae.png"   >
-                        </a>
-                    </div>
-                </div>
-                <div class="row" id="sponsors-row-4">
-                    <div class="small-6 medium-3 columns">
-                        <a href="http://www.criticalmanufacturing.com">
-                            <input class="sponsor-image" type="image" src="images/sponsors/silver_critical.png"   >
-                        </a>
-                    </div>
-                    <div class="small-6 medium-3 columns">
-                        <a href="http://www.porto.pt">
-                            <input class="sponsor-image" type="image" src="images/sponsors/partner_cmporto.jpg"   >
-                        </a>
-                    </div>
-                    <div class="small-6 medium-3 columns">
-                        <a href="http://www.fe.up.pt">
-                            <input class="sponsor-image" type="image" src="images/sponsors/partner_feup.png"   >
-                        </a>
-                    </div>
-                    <div class="small-6 medium-3 columns">
-                        <a href="http://www.up.pt">
-                            <input class="sponsor-image" type="image" src="images/sponsors/partner_up.jpg"   >
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            </div> -->
+            
+        </section> -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="./foundation/foundation.js"></script>
-        <script type="text/javascript" src="main.js"></script>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <script type="text/javascript" src="./main.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </body>
 </html>
