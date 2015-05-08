@@ -17,7 +17,7 @@ body {
     line-height: 1.5em;
     color: #515050;
     background-color: #ffffff;
-    background-image: url(images/porto-river-overlay.png);
+    background-image: url(images/portoriverBW.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -25,7 +25,7 @@ body {
 }
 
 p {
-    color: black;
+    color: #515050;
     text-transform: uppercase;
     line-height: 2.2;
 }
@@ -237,13 +237,17 @@ header .by {
     right: 1rem;
     text-align: left;
     z-index: 1;
-    color:black;
+    color:#515050;
+}
+
+header .by img{
+    width: 200px;
 }
 
 /****************about****************/
 
 #about{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(45, 191, 194, 1);
     margin: -5rem -1rem 0;
     transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
@@ -354,7 +358,7 @@ header .by {
 /****************location****************/
 
 #venue {
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(45, 191, 194, 1);
     margin: -5rem -1rem 0;
     transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
     -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
