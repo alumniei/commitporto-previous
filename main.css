@@ -301,7 +301,7 @@ header .by img{
   margin: 0 auto;
 }
 
-#speakers-plan .speaker-social a i{
+#speakers-plan .speaker-social a i {
     color: white;
     font-size: 1.5rem;
 }
@@ -337,6 +337,7 @@ header .by img{
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    width: 100%;
 }
 
 #speakers-plan .speaker-photo {
@@ -464,9 +465,10 @@ header .by img{
 } 
 
 .sponsors .sponsor-image {
-  padding: 0 2rem;
-  max-width: 100%;
-  max-height: 50px;
+    padding: 0 2rem;
+    max-width: 100%;
+    max-height: 50px;
+    vertical-align: inherit;
 }
 
 #sponsors .sponsors-row {
