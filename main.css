@@ -36,8 +36,8 @@ p strong {
 }
 
 section .container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .section-title{
@@ -248,7 +248,7 @@ header .by img{
 
 #about{
     background-color: rgba(255, 255, 255, 0.65);
-    margin: -5rem -1rem 0;
+    margin: -5rem 0 0;
     transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
@@ -264,7 +264,11 @@ header .by img{
     -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
     -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
     margin: 0 auto;
-    width: 45%;
+    /*width: 45%;*/
+}
+
+#about-container p {
+    margin: 0 auto;
 }
 
 /****************speakers****************/
@@ -274,8 +278,8 @@ header .by img{
     text-align: center;
 }
 
-#speakers-plan .row {
-    padding-top: 1rem;
+#speakers-plan .columns {
+    padding-top: 2rem;
 }
 
 #speakers-plan .speaker-name,
@@ -360,7 +364,7 @@ header .by img{
 
 #venue {
     background-color: rgba(255, 255, 255, 0.65);
-    margin: -5rem -1rem 0;
+    margin: -5rem 0 0;
     transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
     -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
     -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
@@ -371,12 +375,12 @@ header .by img{
 .venue-container{
     padding: 1.5rem 0;
     color: white;
-    width: 45%;
-    margin: 0 auto;
 }
 
 .venue-container div,
 .venue-container h2 {
+    margin-left: auto;
+    margin-right: auto;
     transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
@@ -447,7 +451,7 @@ header .by img{
 .sponsors{
     background-color: rgba(255, 255, 255, 0.65); 
     margin-top: 20px;
-     margin:  1rem -1rem 0;
+     margin:  1rem 0 0;
     transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
@@ -518,7 +522,6 @@ header .by img{
 #behind .institutional .image {
     max-width: 100%;
     max-height: 3rem;
-    max-width: 8rem;
 }
 
 /****************animations****************/
