@@ -17,7 +17,7 @@ body {
     line-height: 1.5em;
     color: #515050;
     background-color: #ffffff;
-    background-image: url(images/porto-river-overlay.jpg);
+    background-image: url(images/river_white.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -81,22 +81,6 @@ header #main-logo {
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
-   /* transform: translate(0%,-50%);
-    -webkit-transform: translate(0%,-50%);*/
-   /* -moz-animation-name: dropLogo;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-duration: 1s;
-
-    -webkit-animation-name: dropLogo;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 1s;
-
-    animation-name: dropLogo;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;*/
 }
 
 header .info {
@@ -104,32 +88,18 @@ header .info {
     margin: 0 auto;
     width: 80%;
     opacity: 1;
-    color: #fff;
+    color: #33BEC2;
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: normal;
-    text-transform: uppercase;    
-   /* -moz-animation-name: upInfo;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-duration: 2s;
-
-    -webkit-animation-name: upInfo;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 2s;
-
-    animation-name: upInfo;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;*/
+    text-transform: uppercase;  
 }
 
 
 header .date {
     text-align: center;
-    color: #fff;
+    color: black;
     font-size: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
