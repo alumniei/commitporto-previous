@@ -26,11 +26,6 @@ $(document).ready(function () {
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
       
         var target = this.hash,
             menu = target;
@@ -47,21 +42,9 @@ $(document).ready(function () {
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
 
-    if (scrollPos > $('.header .date').offset().top) {
+    if (scrollPos > $('#header-end').offset().top) {
         $('.top-bar').show();
     } else {
         $('.top-bar').hide();
     }
-
-    $('.top-bar a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.top-bar ul li a').removeClass("active");
-            currLink.parent().addClass("active");
-        }
-        else{
-            currLink.parent().removeClass("active");
-        }
-    });
 }
