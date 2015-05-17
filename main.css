@@ -282,49 +282,49 @@ header .by img{
 
 /****************speakers****************/
 
-#speakers-plan {
+#speakers {
     margin-bottom: 7rem;
     text-align: center;
 }
 
-#speakers-plan .columns {
+#speakers .columns {
     padding-top: 2rem;
 }
 
-#speakers-plan .speaker-name,
-#speakers-plan .speaker-title,
-#speakers-plan .speak-title {
+#speakers .speaker-name,
+#speakers .speaker-title,
+#speakers .speak-title {
     text-align: center;
 }
 
-#speakers-plan .speaker-name {
+#speakers .speaker-name {
     padding-top: 1rem;
     font-size: 1.5rem;
     color: #2dbfc2;
 }
 
-#speakers-plan .speaker-title {
+#speakers .speaker-title {
     font-size: 0.75rem;
     color: white;
 }
 
-#speakers-plan .speaker-box {
+#speakers .speaker-box {
   position: relative;
   width: 70%;
   margin: 0 auto;
 }
 
-#speakers-plan .speaker-social a i {
+#speakers .speaker-social a i {
     color: white;
     font-size: 1.5rem;
 }
 
-#speakers-plan .speaker-box:hover .speak-title {
+#speakers .speaker-box:hover .speak-title {
   visibility: visible;
   opacity: 1;
 }
 
-#speakers-plan .speak-title {
+#speakers .speak-title {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -344,7 +344,7 @@ header .by img{
     opacity: 0;
 }
 
-#speakers-plan .speak-title p {
+#speakers .speak-title p {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -353,7 +353,7 @@ header .by img{
     width: 100%;
 }
 
-#speakers-plan .speaker-photo {
+#speakers .speaker-photo {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
