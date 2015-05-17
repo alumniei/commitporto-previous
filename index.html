@@ -10,6 +10,7 @@
         <link href="./foundation/foundation-icons.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="main.css">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,20 +30,23 @@
                 <div class="info hide-for-small-only">Committed to Technology</div>
                 <div class="info hide-for-small-only">Committed to Porto</div>
                 <div class="date">June 20th</div>
-                <div class="subscribe hide-for-small-only">
+                <div class="row">
+                    <a id="registration" class="typeform-share button" href="https://commitporto.typeform.com/to/VOJnaR" data-mode="1" target="_blank">Registration</a>
+                    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+                </div>
+                <!-- <div class="subscribe hide-for-small-only">
                     <div id="btn-subscribe">Subscribe to newsletter</div>
-                    <!-- Begin MailChimp Signup Form -->
                     <form action="//alumnileic.us8.list-manage.com/subscribe/post?u=b3a888ccbe0a297e91a4a9921&amp;id=41fb88c276" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <input type="email" value="" placeholder="e-mail address" name="EMAIL" class="required email" id="mce-EMAIL">
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        </div> 
                         <div style="position: absolute; left: -5000px;"><input type="text" name="b_b3a888ccbe0a297e91a4a9921_41fb88c276" tabindex="-1" value=""></div>
                     </form>
-                    <!--End mc_embed_signup-->
-                </div>
+                </div> -->
             </div>
             <div class="by">
                 by:
@@ -157,46 +161,48 @@
                 </div>
             </div>
         </section>
-        <section id="venue" class="section">
+                    <div class="venue-map columns small-12" id="map-canvas"></div>
+
+        <!-- <section id="venue" class="section">
             <div class="venue-container container row">
-                <h2 class="section-title small-11 medium-8">
+                <h2 class="section-title venue small-11 medium-8">
                     Location
                 </h2>
-                <div id="venue-city" class="venue-text small-11 medium-8">
-                     <p><strong>Porto</strong> is one of Europe's oldest tourist destinations. Its wealth of monumental and artistic heritage, Port Wine, open-air leisure spaces and cultural life are just some of the reasons to visit this city.</p>
+                <div id="venue-city" class="venue-text small-11 medium-8 venue">
+                    <div class="venue-text columns small-12" id="venue-description">
+                        Auditorium of the Faculty of Engineering of the University of Porto
+                    </div>
+                    <div class="section-title venue-location-title columns small-12 medium-8 medium-offset-2">
+                        How to get there?
+                    </div>
+                    <div class="venue-text columns small-12" id="venue-address">
+                        Rua Dr. Roberto Frias, s/n, Porto, Portugal<br/>
+                        41º 10’ 41’’ N, 8º 24’ 7’’ O
+                    </div>
+                    <div class="venue-text columns small-12" id="venue-access">
+                        BUS<br/>
+                        204, 300, 301, 803 - stop Faculdade de Engenharia<br/>
+                        205, 305, 505, 506, 603, 604, 704, 705, 706, 707, 804 - stop Hospital de S. João<br/>
+                        METRO<br/>
+                        Line D (Yellow) - stop IPO
+                    </div>
+                  
+                </div>
+            </div>
 
-                     <p>At any time of the day, 365 days of the year, Porto has a special charm for anyone visiting the city for the first time, as it does for those coming back for a second visit, to discover a city that is simultaneously modern and authentic. </p>
-                </div>
-               <!--  <div class="venue-text columns small-12" id="venue-description">
-                    Auditorium of the Faculty of Engineering of the University of Porto
-                </div> -->
-            </div>
-            <!-- <div class="venue-map columns small-12" id="map-canvas"></div>
-            <div class="section-title venue-location-title columns small-12 medium-8 medium-offset-2">
-                    How to get there?
-                </div>
-            <div class="venue-text columns small-12" id="venue-address">
-                Rua Dr. Roberto Frias, s/n, Porto, Portugal<br/>
-                41º 10’ 41’’ N, 8º 24’ 7’’ O
-            </div>
-            <div class="venue-text columns small-12" id="venue-access">
-                BUS<br/>
-                204, 300, 301, 803 - stop Faculdade de Engenharia<br/>
-                205, 305, 505, 506, 603, 604, 704, 705, 706, 707, 804 - stop Hospital de S. João<br/>
-                METRO<br/>
-                Line D (Yellow) - stop IPO
-            </div> -->
-        </section>
+        </section> -->
+         <!--   <p><strong>Porto</strong> is one of Europe's oldest tourist destinations. Its wealth of monumental and artistic heritage, Port Wine, open-air leisure spaces and cultural life are just some of the reasons to visit this city.</p>
+
+                     <p>At any time of the day, 365 days of the year, Porto has a special charm for anyone visiting the city for the first time, as it does for those coming back for a second visit, to discover a city that is simultaneously modern and authentic. </p> -->
         <section id="registration">
             <div class="container">
                 <h2 class="section-title">
                     Registration
                 </h2>
-                <div class="registration-container">
-<!-- Change the width and height values to suit you best -->
-<div class="typeform-widget" data-url="https://commitporto.typeform.com/to/cCD4AW" data-text="Commit Porto-site" style="width:100%;height:500px;"></div>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_cCD4AW&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform</a></div>
+                <div class="registration-container row">
+                    <!-- <i class="fi-lock"></i><br/>coming soon  ... -->
+                    <a id="registration" class="typeform-share button" href="https://commitporto.typeform.com/to/VOJnaR" data-mode="1" target="_blank">Registration</a>
+                    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 
 
                 </div>
@@ -205,12 +211,7 @@
         <section id="sponsors">
             <div class="sponsors">
                 <div class="sponsors-container">
-               <!--  <h2 class="section-title">
-                    Sponsors
-                </h2> -->
-                
                     <div class="row sponsors-row diamond">    
-                        
                         <div class="small-6 medium-4 columns">
                             <a href="http://www.deloitte.pt" target="_blank">
                                 <img class="sponsor-image" src="images/sponsors/diamond_deloitte.png"   >
@@ -279,7 +280,6 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="./foundation/foundation.js"></script>
         <script type="text/javascript" src="./main.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </body>
 </html>

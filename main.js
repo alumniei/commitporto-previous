@@ -30,4 +30,4 @@ function initializeLocationMap() {
   });
 }
 
-//google.maps.event.addDomListener(window, 'load', initializeLocationMap);
+google.maps.event.addDomListener(window, 'load', initializeLocationMap);
