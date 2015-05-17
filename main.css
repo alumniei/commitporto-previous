@@ -41,7 +41,7 @@ section .container {
 }
 
 .section-title{
-    color: white;
+    color: black;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -281,7 +281,7 @@ header .by img{
 
 #speakers .speaker-title {
     font-size: 0.75rem;
-    color: white;
+    color: black;
 }
 
 #speakers .speaker-box {
@@ -291,7 +291,7 @@ header .by img{
 }
 
 #speakers .speaker-social a i {
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 
