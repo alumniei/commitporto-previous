@@ -232,7 +232,7 @@ header .by img{
 /****************about****************/
 
 #about{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(51, 190, 194, 0.65);
     margin: -5rem 0 0;
     transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
