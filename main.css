@@ -88,12 +88,17 @@ header .info {
     margin: 0 auto;
     width: 80%;
     opacity: 1;
-    color: black;
+    color: #515151;
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: normal;
     text-transform: uppercase;  
+    padding-top: 1rem;
+}
+
+header .info span {
+    background-color: rgba(255, 255, 255, 0.65);
 }
 
 
