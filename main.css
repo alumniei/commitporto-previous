@@ -253,6 +253,11 @@ header .by img{
     width: 200px;
 }
 
+
+.top-bar {
+    display: none;
+}
+
 /****************about****************/
 
 #about{
