@@ -55,6 +55,11 @@ section .container {
    max-width: 100%;
 }
 
+.highlight {
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 0 0.5rem;
+}
+
 /****************landing****************/
 
 header {
@@ -97,19 +102,14 @@ header .info {
     padding-top: 1rem;
 }
 
-header .info span {
-    background-color: rgba(51, 190, 194, 0.65);
-    padding: 0 0.5rem;
-}
-
-
 header .date {
     text-align: center;
-    color: black;
-    font-size: 2rem;
+    color: #33bec2;
+    font-size: 3rem;
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 }
 
 .subscribe,
@@ -239,7 +239,7 @@ header .by img{
 
 #about{
     background-color: rgba(51, 190, 194, 0.65);
-    margin: -5rem 0 0;
+    margin: -5rem -3px 0;
     transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
     -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
@@ -289,6 +289,7 @@ header .by img{
 #speakers .speaker-title {
     font-size: 0.75rem;
     color: black;
+    font-weight: 800;
 }
 
 #speakers .speaker-box {
@@ -334,6 +335,8 @@ header .by img{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
+    border-radius: 50%;
+    border: 1px solid transparent;
 }
 
 #speakers .speaker-photo {
