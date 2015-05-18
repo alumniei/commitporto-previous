@@ -37,18 +37,64 @@ p strong {
 
 section .container {
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    text-align: center;
 }
 
-.section-title{
+.row-title {
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+
+.section-title {
     color: black;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
     margin-top: 0;
+}
+
+.title-split {
+    height: 1px;
+    padding: 0 !important;
+    vertical-align: middle;
+    background: #2dbfc2;
+    margin-top: 20px;
+}
+
+.title-split + .section-title {
+    padding-top: 0 !important;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.bar {
+    margin: -5rem -3px 0;
+    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+}
+
+.bar .bar-container {
+    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    margin: 0 auto;
+    padding-bottom: 6rem;
+}
+
+.bar.blue {
+    background-color: rgba(51, 190, 194, 0.65);
+}
+
+.bar.blue .bar-container {
+    color: #fff;
 }
 
 .fullWidth {
@@ -104,116 +150,12 @@ header .info {
 
 header .date {
     text-align: center;
-    color: #33bec2;
+    color: #515151;
     font-size: 3rem;
     padding-bottom: 2rem;
     padding-top: 2.5rem;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-}
-
-.subscribe,
-#registration.typeform-share.button {
-    position: relative;
-    width: 30%;
-    margin: 0 auto;
-}
-
-.subscribe form {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-#btn-subscribe,
-#registration.typeform-share.button {
-    display: block;
-    background-color: #33BEC2;
-    visibility: visible;
-    cursor: pointer;
-    opacity: 1;
-    padding: 0 1.5rem;
-    margin: 1.5rem auto;
-    color: #fff;
-    line-height: 2.5;
-    text-align: center;
-    overflow: hidden;
-    transform: translate(0%,0%);
-    -webkit-transform: translate(0%,0%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background-image: none;
-    border: none;
-    float: none;
-    font-size: 1.3rem;
-}
-
-#btn-subscribe {
-    width: 100%;
-}
-
-#btn-subscribe.noshow{
-    opacity: 0;
-    padding: 0;
-    visibility: hidden;
-}
-
-input#mce-EMAIL {
-    visibility: hidden;
-    height: 40px;
-    width: 0%;
-    font-size: 1rem;
-    transform: translate(0%,0%);
-    -webkit-transform: translate(0%, 0%);
-    -webkit-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out; 
-}
-
-input#mce-EMAIL.subscribe {
-    visibility: visible;
-    width: 100%;
-    padding: 0 20px;
-}
-
-#mc-embedded-subscribe {
-    display: block;
-    margin: 0 auto;
-    opacity: 0;
-    background-color: #33BEC2;
-    color: #fff;
-    border: 0;
-    height: 40px;
-    width: 200px;
-    font-size: 1rem;
-    line-height: 1rem;
-    cursor: pointer;
-    -webkit-appearence: none;
-    transform: translate(0%, 0%);
-    -webkit-transform: translate(0%, 0%);
-    -webkit-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
-}
-
-#mc-embedded-subscribe.subscribe {
-    transform: translate(0%,0%);
-    -webkit-transform: translate(0%,0%);
-    opacity: 1;
-}
-
-#mce-responses {
-    transform: translate(0%, 0%);
-    -webkit-transform: translate(0%, 0%);
-    text-align: center;
-    color: #fff;
-}
-
-#mce-responses a, #mce-responses a:visited, #mce-responses a:hover, #mce-responses a:active{
-    color: #fff;
-}
-
-header form input#mce-EMAIL:not(.subscribe),
-header form input#mc-embedded-subscribe:not(.subscribe){
-    display: none;
+    text-shadow: 2px 2px 1px black;
 }
 
 header .by {
@@ -238,23 +180,12 @@ header .by img{
 /****************about****************/
 
 #about{
-    background-color: rgba(51, 190, 194, 0.65);
-    margin: -5rem -3px 0;
-    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    
 }
 
 #about-container {
     color: #fff;
-    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    margin: 0 auto;
+    
     /*width: 45%;*/
 }
 
@@ -265,7 +196,6 @@ header .by img{
 /****************speakers****************/
 
 #speakers {
-    margin-bottom: 7rem;
     text-align: center;
 }
 
@@ -283,7 +213,7 @@ header .by img{
     padding-top: 1rem;
     font-size: 1.5rem;
     color: black;
-   /* color: #2dbfc2;*/
+    padding-bottom: 0.5rem;
 }
 
 #speakers .speaker-title {
@@ -360,34 +290,13 @@ header .by img{
 /****************location****************/
 
 #venue {
-    background-color: rgba(255, 255, 255, 0.65);
-    margin: -5rem 0 0;
-    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
 }
 
-.venue-container{
-    padding: 1.5rem 0;
-    color: white;
-}
-
-.venue-container .venue {
-    margin-left: auto;
-    margin-right: auto;
-    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-}
-
-#venue .venue-text {
-    font-size: 0.85rem;
-    text-align: center;
-    margin: 0 auto;
+#venue .venue-area {
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin-top: 3.5rem;
 }
 
 .google-maps {
@@ -415,20 +324,6 @@ header .by img{
     max-width : none;
 }
 
-/*
-#venue .venue-access-container{
-    background-color: #2DBFC2;
-}
-
-#venue .venue-map {
-    margin: 2rem 0;
-    top: -170px;
-}
-
-
-
-*/
-
 /****************registration****************/
 
 #registration {
@@ -443,8 +338,62 @@ header .by img{
     margin-top: 3rem;
 }
 
-#registration .registration-container .fi-lock {
-    font-size: 3.5rem;
+#registration .registration-container .icon-content {
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*background-color: rgba(51, 190, 194, 0.65);*/
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#registration .registration-container .icon-content i {
+    font-size: 4rem;
+}
+
+#registration .registration-container .icon-legend {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+#registration .registration-container  > div {
+    margin: 0 auto;
+}
+
+#registration-button {
+    width: 30%;
+    height: 50px;
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    background: rgba(51, 190, 194, 0.8);
+    color: #fff!important;
+    font-weight: bold;
+    line-height: 50px;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    padding: 0 1.5rem;
+    text-align: center;
+    border: none;
+    float: none;
+    font-size: 1.3rem;
+    margin: 5rem auto;
 }
 
 /****************sponsors****************/
@@ -513,11 +462,11 @@ header .by img{
 #behind a i {
     margin: 0 1rem;
     font-size: 3rem;
-    color: white;
+    color: black;
 }
 
 #behind .institutional {
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 #behind .institutional .image {

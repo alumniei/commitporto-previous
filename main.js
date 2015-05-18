@@ -2,6 +2,29 @@ function initializeLocationMap() {
     var Latlng = new google.maps.LatLng(41.177875,-8.597916);
     var markerImg = "images/map.svg";
       
+    // Create an array of styles.
+    var styles = [
+        {
+            stylers: [
+                { hue: "#2dbfc2" },
+                { saturation: -50 }
+            ]
+        },{
+            featureType: "road",
+            elementType: "geometry",
+        },{
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+                { visibility: "off" }
+            ]
+        }
+    ];
+
+    // Create a new StyledMapType object, passing it the array of styles,
+    // as well as the name to be displayed on the map type control.
+    var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+      
     var mapOptions = {
       zoom: 16,
       center: Latlng,
@@ -14,6 +37,11 @@ function initializeLocationMap() {
         map: map,
         icon: markerImg
     });
+
+
+     //Associate the styled map with the MapTypeId and set it to display.
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
 }
 
 google.maps.event.addDomListener(window, 'load', initializeLocationMap);

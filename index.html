@@ -68,8 +68,8 @@
                 <a href="https://www.facebook.com/AlumniEI/info?tab=page_info" target="_blank"><img src="images/alumniei-02.png"></a>
             </div>
         </header>
-        <section id="about" class="section">
-            <div class="container">
+        <section id="about" class="section bar blue">
+            <div class="container bar-container">
                 <div id="about-container" class="row">
                     <p class="small-11 medium-8">
                         <strong>Commit Porto</strong> is a tech conference to be held in Porto on June 20th, bringing together professionals from different areas talking about their experience <strong>tackling challenges</strong> in software development with the <strong>latest technologies!</strong>
@@ -81,9 +81,13 @@
         </section>
         <section id="speakers">
             <div class="container">
-                <h2 class="section-title">
-                    Speakers
-                </h2>
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Speakers
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                </div>
                 <div class="row">
                     <div class="columns medium-4 small-12">
                         <div class="speaker-box">
@@ -171,24 +175,55 @@
                         <div class="speaker-name">to be announced</div>
                         <div class="speaker-title">...</div>
                     </div>
-                    <div class="columns medium-4 hide-for-small-only"></div>
                 </div>
             </div>
         </section>
         <section id="venue">
-            <div class="venue-map columns small-12" id="map-canvas"></div>
+            <div class="container">
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Venue
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                </div>
+                <div class="venue-area"><div class="venue-map columns small-12" id="map-canvas"></div></div>
+            </div>
         </section>
         <section id="registration">
             <div class="container">
-                <h2 class="section-title">
-                    Registration
-                </h2>
-                <div class="registration-container row">
-                    <!-- <i class="fi-lock"></i><br/>coming soon  ... -->
-                    <a id="registration" class="typeform-share button" href="https://commitporto.typeform.com/to/VOJnaR" data-mode="1" target="_blank">Registration</a>
-                    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-
-
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Registration
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                </div>
+                <div class="registration-container">
+                    <div class="row">
+                        <div class="small-4 columns">
+                            <div class="icon-content">
+                                <i class="fi-euro"></i>
+                                <p class="icon-legend"><b>COST-FREE</b></p>
+                            </div>
+                        </div>
+                        <div class="small-4 columns">
+                            <div class="icon-content">
+                                <i class="fi-map"></i>
+                                <p class="icon-legend"><b>FEUP</b></p>
+                            </div>
+                        </div>
+                        <div class="small-4 columns">
+                            <div class="icon-content">
+                                <i class="fi-calendar"></i>
+                                <p class="icon-legend"><b>June 20th</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <a id="registration-button" class="typeform-share button" href="https://commitporto.typeform.com/to/VOJnaR" data-mode="1" target="_blank">Register here!</a>
+                            <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+                    </div>
                 </div>
             </div>
         </section>
@@ -196,17 +231,17 @@
             <div class="sponsors">
                 <div class="sponsors-container">
                     <div class="row sponsors-row diamond">    
-                        <div class="small-6 medium-4 columns">
+                        <div class="small-4 columns">
                             <a href="http://www.deloitte.pt" target="_blank">
                                 <img class="sponsor-image" src="images/sponsors/diamond_deloitte.png"   >
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns">
+                        <div class="small-4 columns">
                             <a href="http://www.sonae.pt" target="_blank">
                                 <img class="sponsor-image" src="images/sponsors/diamond_sonae.png"   >
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns">
+                        <div class="small-4 columns">
                             <a href="http://www.boldint.com/" target="_blank">
                                 <img class="sponsor-image" src="images/sponsors/diamond_bold.png"   >
                             </a>
@@ -228,10 +263,14 @@
         </section>
         <section id="behind" class="section">
             <div class="container">
-                <h2 class="section-title">
-                    Keep in touch
-                </h2>
-                <img src="images/medusa.png" >
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Keep in touch
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                </div>
+                <img src="images/medusa-blue.png" >
                 <br/>
                 <a href="https://www.facebook.com/CommitPorto" target="_blank"><i class="fi-social-facebook"></i></a>
                 <a href="https://twitter.com/CommitPorto" target="_blank"><i class="fi-social-twitter"></i></a>
@@ -241,17 +280,17 @@
             <div class="row institutional">
                 <div class="small-3 columns">
                     <a href="http://www.facebook.com/Alumniei" target="_blank">
-                        <img src="images/alumniei-03.png">
+                        <img class="image" src="images/alumniei-01.png">
                     </a>
                 </div>
                 <div class="small-3 columns">
                     <a href="http://www.up.pt" target="_blank">
-                        <img class="image" src="images/sponsors/partner_upW.png"   >
+                        <img class="image" src="images/sponsors/partner_up.png"   >
                     </a>
                 </div>
                 <div class="small-3 columns">
                     <a href="http://www.fe.up.pt" target="_blank">
-                        <img class="image" src="images/sponsors/partner_feupW.png"   >
+                        <img class="image" src="images/sponsors/partner_feup.png"   >
                     </a>
                 </div>
                 <div class="small-3 columns">
