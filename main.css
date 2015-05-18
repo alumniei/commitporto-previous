@@ -98,7 +98,8 @@ header .info {
 }
 
 header .info span {
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(51, 190, 194, 0.65);
+    padding: 0 0.5rem;
 }
 
 
@@ -108,7 +109,7 @@ header .date {
     font-size: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .subscribe,
@@ -281,7 +282,8 @@ header .by img{
 #speakers .speaker-name {
     padding-top: 1rem;
     font-size: 1.5rem;
-    color: #2dbfc2;
+    color: black;
+   /* color: #2dbfc2;*/
 }
 
 #speakers .speaker-title {
@@ -290,9 +292,9 @@ header .by img{
 }
 
 #speakers .speaker-box {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
 }
 
 #speakers .speaker-social a i {
@@ -340,7 +342,9 @@ header .by img{
     -o-border-radius: 50%;
     border-radius: 50%;
     
-    border: 12px solid #efefef;
+    /*color: #2dbfc2;*/
+
+    border: 5px solid #2dbfc2;
     
     vertical-align: middle;
     transition: all 0.2s;
