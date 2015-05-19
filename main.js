@@ -67,7 +67,7 @@ $(document).ready(function () {
     });
 
     if(window.location.hash === '#registration') {
-        $('#registration-button').trigger('click');
+        $('#registration-button')[0].click()
     }
 });
 
