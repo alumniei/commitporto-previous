@@ -65,10 +65,6 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-
-    if(window.location.hash === '#registration') {
-        $('#registration-button')[0].click()
-    }
 });
 
 function onScroll(event){
