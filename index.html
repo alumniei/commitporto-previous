@@ -10,48 +10,72 @@
         <link href="./foundation/foundation-icons.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="main.css">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-62857310-1', 'auto');
-          ga('send', 'pageview');
+          // ga('create', 'UA-62857310-1', 'auto');
+          // ga('send', 'pageview');
 
         </script>
     </head>
     <body>
         <header>
+            <div class="fixed">
+                <nav class="top-bar" data-topbar role="navigation">
+                    <ul class="title-area">
+                        <li class="name">
+                          <h1><a href="#">My Site</a></h1>
+                        </li>
+                         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                      </ul>
+
+                    <section class="top-bar-section">
+                        <ul class="right">
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#speakers">speakers</a></li>
+                            <li><a href="#venue">venue</a></li>
+                            <li><a href="#registration">registration</a></li>
+                            <li><a href="#sponsors">sponsors</a></li>
+                            <li><a href="#behind">keep in touch</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="top-bar-section">
+                        <ul class="right">
+                        </ul>
+                    </section>
+                </nav>
+            </div>
             <h1>commitPorto</h1>
             <div class="header">
-                <img id="main-logo" class="noshow" src="images/commit-white.png">
-                <div class="info hide-for-small-only">Committed to Technology</div>
-                <div class="info hide-for-small-only">Committed to Porto</div>
+                <img id="main-logo" class="noshow" src="images/horizontal.png">
+                <div id="header-end" class="info hide-for-small-only"><span class="highlight">Committed to Technology</span></div>
+                <div class="info hide-for-small-only"><span class="highlight">Committed to Porto</span></div>
                 <div class="date">June 20th</div>
-                <div class="subscribe hide-for-small-only">
+                <!-- <div class="subscribe hide-for-small-only">
                     <div id="btn-subscribe">Subscribe to newsletter</div>
-                    <!-- Begin MailChimp Signup Form -->
                     <form action="//alumnileic.us8.list-manage.com/subscribe/post?u=b3a888ccbe0a297e91a4a9921&amp;id=41fb88c276" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <input type="email" value="" placeholder="e-mail address" name="EMAIL" class="required email" id="mce-EMAIL">
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        </div> 
                         <div style="position: absolute; left: -5000px;"><input type="text" name="b_b3a888ccbe0a297e91a4a9921_41fb88c276" tabindex="-1" value=""></div>
                     </form>
-                    <!--End mc_embed_signup-->
-                </div>
+                </div> -->
             </div>
             <div class="by">
-                by:
-                <br/>
                 <a href="https://www.facebook.com/AlumniEI/info?tab=page_info" target="_blank"><img src="images/alumniei-02.png"></a>
             </div>
         </header>
-        <section id="about" class="section">
-            <div class="container">
+        <section id="about" class="section bar blue">
+            <div class="container bar-container">
                 <div id="about-container" class="row">
                     <p class="small-11 medium-8">
                         <strong>Commit Porto</strong> is a tech conference to be held in Porto on June 20th, bringing together professionals from different areas talking about their experience <strong>tackling challenges</strong> in software development with the <strong>latest technologies!</strong>
@@ -61,11 +85,15 @@
                 </div>
             </div>
         </section>
-        <section id="speakers-plan">
+        <section id="speakers">
             <div class="container">
-                <h2 class="section-title">
-                    Speakers
-                </h2>
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Speakers
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                </div>
                 <div class="row">
                     <div class="columns medium-4 small-12">
                         <div class="speaker-box">
@@ -77,7 +105,7 @@
                             </div>
                         </div>
                         <div class="speaker-name">António Barros</div>
-                        <div class="speaker-title">Sales Manager @ WinTrust</div>
+                        <div class="speaker-title"><span class="highlight">Sales Manager @ WinTrust</span></div>
                         <div class="speaker-social">
                             <a href="https://www.linkedin.com/profile/view?id=745119" target="_blank"><i class="fi-social-linkedin"></i></a>
                             <a href="http://www.pstqb.pt" target="_blank"><img src="images/logo_pstqb.png" style="height: 17px; vertical-align: baseline;" /></a>
@@ -93,7 +121,7 @@
                             </div>
                         </div>
                         <div class="speaker-name">Jorge Teixeira</div>
-                        <div class="speaker-title">R&D coordinator @ SAPO Labs / Portugal Telecom</div>
+                        <div class="speaker-title"><span class="highlight">R&D coordinator @ SAPO Labs / Portugal Telecom</span></div>
                         <div class="speaker-social">
                             <a href="https://pt.linkedin.com/in/jorgefilipeteixeira" target="_blank"><i class="fi-social-linkedin"></i></a>
                         </div>
@@ -108,7 +136,7 @@
                             </div>
                         </div>
                         <div class="speaker-name">Gonçalo Silva</div>
-                        <div class="speaker-title">Head of Android, Product Designer @ Doist</div>
+                        <div class="speaker-title"><span class="highlight">Head of Android, Product Designer @ Doist</span></div>
                         <div class="speaker-social">
                             <a href="http://twitter.com/goncalossilva" target="_blank"><i class="fi-social-twitter"></i></a>
                             <a href="http://github.com/goncalossilva" target="_blank"><i class="fi-social-github"></i></a>
@@ -124,7 +152,7 @@
                             </div>
                         </div>
                         <div class="speaker-name">Carlos Gomes</div>
-                        <div class="speaker-title">Lead Data Scientist @ Farfetch</div>
+                        <div class="speaker-title"><span class="highlight">Lead Data Scientist @ Farfetch</span></div>
                         <div class="speaker-social">
                             <a href="https://www.linkedin.com/profile/view?id=59577095" target="_blank"><i class="fi-social-linkedin"></i></a>
                         </div>
@@ -139,7 +167,7 @@
                             </div>
                         </div>
                         <div class="speaker-name">Nuno Cerqueira</div>
-                        <div class="speaker-title">Principal Software Engineer Lead @ Microsoft, Skype</div>
+                        <div class="speaker-title"><span class="highlight">Principal Software Engineer Lead @ Microsoft, Skype</span></div>
                         <div class="speaker-social">
                             <a href="https://uk.linkedin.com/in/cerqueiranuno" target="_blank"><i class="fi-social-linkedin"></i></a>
                         </div>
@@ -154,7 +182,7 @@
                             </div>
                         </div>
                         <div class="speaker-name">Jean Vanderdonckt</div>
-                        <div class="speaker-title">Full Professor @ Université Catholique de Louvain</div>
+                        <div class="speaker-title"><span class="highlight">Full Professor @ Université Catholique de Louvain</span></div>
                         <div class="speaker-social">
                             <a href="https://be.linkedin.com/in/jeanvdd" target="_blank"><i class="fi-social-linkedin"></i></a>
                         </div>
@@ -169,70 +197,73 @@
                         <div class="speaker-name">to be announced</div>
                         <div class="speaker-title">...</div>
                     </div>
-                    <div class="columns medium-4 hide-for-small-only"></div>
                 </div>
             </div>
         </section>
-        <section id="venue" class="section">
-            <div class="venue-container container row">
-                <h2 class="section-title small-11 medium-8">
-                    Location
-                </h2>
-                <div id="venue-city" class="venue-text small-11 medium-8">
-                     <p><strong>Porto</strong> is one of Europe's oldest tourist destinations. Its wealth of monumental and artistic heritage, Port Wine, open-air leisure spaces and cultural life are just some of the reasons to visit this city.</p>
-
-                     <p>At any time of the day, 365 days of the year, Porto has a special charm for anyone visiting the city for the first time, as it does for those coming back for a second visit, to discover a city that is simultaneously modern and authentic. </p>
+        <section id="venue">
+            <div class="container">
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Venue
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
                 </div>
-               <!--  <div class="venue-text columns small-12" id="venue-description">
-                    Auditorium of the Faculty of Engineering of the University of Porto
-                </div> -->
+                <div class="venue-area"><div class="venue-map columns small-12" id="map-canvas"></div></div>
             </div>
-            <!-- <div class="venue-map columns small-12" id="map-canvas"></div>
-            <div class="section-title venue-location-title columns small-12 medium-8 medium-offset-2">
-                    How to get there?
-                </div>
-            <div class="venue-text columns small-12" id="venue-address">
-                Rua Dr. Roberto Frias, s/n, Porto, Portugal<br/>
-                41º 10’ 41’’ N, 8º 24’ 7’’ O
-            </div>
-            <div class="venue-text columns small-12" id="venue-access">
-                BUS<br/>
-                204, 300, 301, 803 - stop Faculdade de Engenharia<br/>
-                205, 305, 505, 506, 603, 604, 704, 705, 706, 707, 804 - stop Hospital de S. João<br/>
-                METRO<br/>
-                Line D (Yellow) - stop IPO
-            </div> -->
         </section>
         <section id="registration">
             <div class="container">
-                <h2 class="section-title">
-                    Registration
-                </h2>
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Registration
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                </div>
                 <div class="registration-container">
-                    <i class="fi-lock"></i><br/>coming soon  ...
+                    <div class="row">
+                        <div class="small-4 columns">
+                            <div class="icon-content">
+                                <i class="fi-euro"></i>
+                                <p class="icon-legend"><b>COST-FREE</b></p>
+                            </div>
+                        </div>
+                        <div class="small-4 columns">
+                            <div class="icon-content">
+                                <i class="fi-map"></i>
+                                <p class="icon-legend"><b>FEUP</b></p>
+                            </div>
+                        </div>
+                        <div class="small-4 columns">
+                            <div class="icon-content">
+                                <i class="fi-bookmark"></i>
+                                <p class="icon-legend"><b>June 20th</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <a id="registration-button" class="typeform-share button small-4 columns" href="https://commitporto.typeform.com/to/VOJnaR" data-mode="1" target="_blank">Register here!</a>
+                            <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="sponsors">
             <div class="sponsors">
                 <div class="sponsors-container">
-               <!--  <h2 class="section-title">
-                    Sponsors
-                </h2> -->
-                
                     <div class="row sponsors-row diamond">    
-                        
-                        <div class="small-6 medium-4 columns">
+                        <div class="small-4 columns">
                             <a href="http://www.deloitte.pt" target="_blank">
                                 <img class="sponsor-image" src="images/sponsors/diamond_deloitte.png"   >
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns">
+                        <div class="small-4 columns">
                             <a href="http://www.sonae.pt" target="_blank">
                                 <img class="sponsor-image" src="images/sponsors/diamond_sonae.png"   >
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns">
+                        <div class="small-4 columns">
                             <a href="http://www.boldint.com/" target="_blank">
                                 <img class="sponsor-image" src="images/sponsors/diamond_bold.png"   >
                             </a>
@@ -243,21 +274,25 @@
             <div class="sponsors">
                 <div class="sponsors-container">
                     <div class="row sponsors-row silver">
-                        <!-- <div class="small-6 medium-2 columns"> -->
+                        <div class="custom-small-5-cols">
                             <a href="http://www.criticalmanufacturing.com" target="_blank">
                                 <img class="sponsor-image" type="image" src="images/sponsors/silver_critical.png"   >
                             </a>
-                        <!-- </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="behind" class="section">
             <div class="container">
-                <h2 class="section-title">
-                    Keep in touch
-                </h2>
-                <img src="images/medusa.png" >
+                <div class="row row-title">
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                    <h2 class="section-title columns medium-4 small-12">
+                        Keep in touch
+                    </h2>
+                    <span class="title-split columns medium-4 hide-for-small-only"></span>
+                </div>
+                <img src="images/medusa-blue.png" >
                 <br/>
                 <a href="https://www.facebook.com/CommitPorto" target="_blank"><i class="fi-social-facebook"></i></a>
                 <a href="https://twitter.com/CommitPorto" target="_blank"><i class="fi-social-twitter"></i></a>
@@ -267,17 +302,17 @@
             <div class="row institutional">
                 <div class="small-3 columns">
                     <a href="http://www.facebook.com/Alumniei" target="_blank">
-                        <img src="images/alumniei-03.png">
+                        <img class="image" src="images/alumniei-01.png">
                     </a>
                 </div>
                 <div class="small-3 columns">
                     <a href="http://www.up.pt" target="_blank">
-                        <img class="image" src="images/sponsors/partner_upW.png"   >
+                        <img class="image" src="images/sponsors/partner_up.png"   >
                     </a>
                 </div>
                 <div class="small-3 columns">
                     <a href="http://www.fe.up.pt" target="_blank">
-                        <img class="image" src="images/sponsors/partner_feupW.png"   >
+                        <img class="image" src="images/sponsors/partner_feup.png"   >
                     </a>
                 </div>
                 <div class="small-3 columns">
@@ -290,7 +325,6 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="./foundation/foundation.js"></script>
         <script type="text/javascript" src="./main.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--<script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
     </body>
 </html>

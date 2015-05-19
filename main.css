@@ -17,7 +17,7 @@ body {
     line-height: 1.5em;
     color: #515050;
     background-color: #ffffff;
-    background-image: url(images/porto-river-overlay.jpg);
+    background-image: url(images/river_white.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -37,22 +37,73 @@ p strong {
 
 section .container {
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    text-align: center;
 }
 
-.section-title{
-    color: white;
+.row-title {
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+
+.section-title {
+    color: black;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
     margin-top: 0;
+}
+
+.title-split {
+    height: 1px;
+    padding: 0 !important;
+    vertical-align: middle;
+    background: #2dbfc2;
+    margin-top: 20px;
+}
+
+.title-split + .section-title {
+    padding-top: 0 !important;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.bar {
+    margin: -5rem -3px 0;
+    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+}
+
+.bar .bar-container {
+    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
+    margin: 0 auto;
+    padding-bottom: 6rem;
+}
+
+.bar.blue {
+    background-color: rgba(51, 190, 194, 0.65);
+}
+
+.bar.blue .bar-container {
+    color: #fff;
 }
 
 .fullWidth {
    max-width: 100%;
+}
+
+.highlight {
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 0 0.5rem;
 }
 
 /****************landing****************/
@@ -81,22 +132,6 @@ header #main-logo {
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
-   /* transform: translate(0%,-50%);
-    -webkit-transform: translate(0%,-50%);*/
-   /* -moz-animation-name: dropLogo;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-duration: 1s;
-
-    -webkit-animation-name: dropLogo;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 1s;
-
-    animation-name: dropLogo;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;*/
 }
 
 header .info {
@@ -104,131 +139,23 @@ header .info {
     margin: 0 auto;
     width: 80%;
     opacity: 1;
-    color: #fff;
+    color: #515151;
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: normal;
-    text-transform: uppercase;    
-   /* -moz-animation-name: upInfo;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-duration: 2s;
-
-    -webkit-animation-name: upInfo;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 2s;
-
-    animation-name: upInfo;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;*/
+    text-transform: uppercase;  
+    padding-top: 1rem;
 }
-
 
 header .date {
     text-align: center;
-    color: #fff;
-    font-size: 2rem;
+    color: #515151;
+    font-size: 3rem;
     padding-bottom: 2rem;
-    padding-top: 2rem;
-    font-weight: 400;
-}
-
-.subscribe {
-    position: relative;
-    width: 30%;
-    margin: 0 auto;
-}
-
-.subscribe form {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-#btn-subscribe {
-    display: block;
-    background-color: #33BEC2;
-    visibility: visible;
-    cursor: pointer;
-    opacity: 1;
-    width: 100%;
-    padding: 0 1.5rem;
-    margin: 1.5rem auto;
-    color: #fff;
-    line-height: 2.5;
-    text-align: center;
-    overflow: hidden;
-    transform: translate(0%,0%);
-    -webkit-transform: translate(0%,0%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-}
-
-#btn-subscribe.noshow{
-    opacity: 0;
-    padding: 0;
-    visibility: hidden;
-}
-
-input#mce-EMAIL {
-    visibility: hidden;
-    height: 40px;
-    width: 0%;
-    font-size: 1rem;
-    transform: translate(0%,0%);
-    -webkit-transform: translate(0%, 0%);
-    -webkit-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out; 
-}
-
-input#mce-EMAIL.subscribe {
-    visibility: visible;
-    width: 100%;
-    padding: 0 20px;
-}
-
-#mc-embedded-subscribe {
-    display: block;
-    margin: 0 auto;
-    opacity: 0;
-    background-color: #33BEC2;
-    color: #fff;
-    border: 0;
-    height: 40px;
-    width: 200px;
-    font-size: 1rem;
-    line-height: 1rem;
-    cursor: pointer;
-    -webkit-appearence: none;
-    transform: translate(0%, 0%);
-    -webkit-transform: translate(0%, 0%);
-    -webkit-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
-}
-
-#mc-embedded-subscribe.subscribe {
-    transform: translate(0%,0%);
-    -webkit-transform: translate(0%,0%);
-    opacity: 1;
-}
-
-#mce-responses {
-    transform: translate(0%, 0%);
-    -webkit-transform: translate(0%, 0%);
-    text-align: center;
-    color: #fff;
-}
-
-#mce-responses a, #mce-responses a:visited, #mce-responses a:hover, #mce-responses a:active{
-    color: #fff;
-}
-
-header form input#mce-EMAIL:not(.subscribe),
-header form input#mc-embedded-subscribe:not(.subscribe){
-    display: none;
+    padding-top: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px black;
 }
 
 header .by {
@@ -244,26 +171,26 @@ header .by img{
     width: 200px;
 }
 
+.custom-small-5-cols {
+    width: 20%;
+    margin: 0 auto;
+}
+
+/****************top-bar****************/
+
+.top-bar {
+    display: none;
+}
+
 /****************about****************/
 
 #about{
-    background-color: rgba(255, 255, 255, 0.65);
-    margin: -5rem 0 0;
-    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
+    
 }
 
 #about-container {
     color: #fff;
-    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    margin: 0 auto;
+    
     /*width: 45%;*/
 }
 
@@ -273,49 +200,50 @@ header .by img{
 
 /****************speakers****************/
 
-#speakers-plan {
-    margin-bottom: 7rem;
+#speakers {
     text-align: center;
 }
 
-#speakers-plan .columns {
+#speakers .columns {
     padding-top: 2rem;
 }
 
-#speakers-plan .speaker-name,
-#speakers-plan .speaker-title,
-#speakers-plan .speak-title {
+#speakers .speaker-name,
+#speakers .speaker-title,
+#speakers .speak-title {
     text-align: center;
 }
 
-#speakers-plan .speaker-name {
+#speakers .speaker-name {
     padding-top: 1rem;
     font-size: 1.5rem;
-    color: #2dbfc2;
+    color: black;
+    padding-bottom: 0.5rem;
 }
 
-#speakers-plan .speaker-title {
+#speakers .speaker-title {
     font-size: 0.75rem;
-    color: white;
+    color: black;
+    font-weight: 800;
 }
 
-#speakers-plan .speaker-box {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
+#speakers .speaker-box {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
 }
 
-#speakers-plan .speaker-social a i {
-    color: white;
+#speakers .speaker-social a i {
+    color: black;
     font-size: 1.5rem;
 }
 
-#speakers-plan .speaker-box:hover .speak-title {
+#speakers .speaker-box:hover .speak-title {
   visibility: visible;
   opacity: 1;
 }
 
-#speakers-plan .speak-title {
+#speakers .speak-title {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -335,22 +263,26 @@ header .by img{
     opacity: 0;
 }
 
-#speakers-plan .speak-title p {
+#speakers .speak-title p {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
+    border-radius: 50%;
+    border: 1px solid transparent;
 }
 
-#speakers-plan .speaker-photo {
+#speakers .speaker-photo {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
     
-    border: 12px solid #efefef;
+    /*color: #2dbfc2;*/
+
+    border: 5px solid #2dbfc2;
     
     vertical-align: middle;
     transition: all 0.2s;
@@ -363,44 +295,13 @@ header .by img{
 /****************location****************/
 
 #venue {
-    background-color: rgba(255, 255, 255, 0.65);
-    margin: -5rem 0 0;
-    transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -webkit-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -moz-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -o-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
-    -ms-transform: rotate(5deg) scale(1) skew(5deg) translate(0px);
 }
 
-.venue-container{
-    padding: 1.5rem 0;
-    color: white;
-}
-
-.venue-container div,
-.venue-container h2 {
-    margin-left: auto;
-    margin-right: auto;
-    transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -webkit-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -moz-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -o-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-    -ms-transform: rotate(355deg) scale(1) skew(-5deg) translate(0px);
-}
-
-/*#venue .venue-text {
-    font-size: 0.85rem;
-    text-align: center;
-    margin: 1rem 0;
-}
-
-#venue .venue-access-container{
-    background-color: #2DBFC2;
-}
-
-#venue .venue-map {
-    margin: 2rem 0;
-    top: -170px;
+#venue .venue-area {
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin-top: 3.5rem;
 }
 
 .google-maps {
@@ -418,15 +319,15 @@ header .by img{
     height: 100%;
 }
 
-#map-canvas img {
-    max-width : none;
-}
-
 #map-canvas {
     display: block;
     max-width: 100%;
     height: 400px;
-}*/
+}
+
+#map-canvas img {
+    max-width : none;
+}
 
 /****************registration****************/
 
@@ -442,8 +343,62 @@ header .by img{
     margin-top: 3rem;
 }
 
-#registration .registration-container .fi-lock {
-    font-size: 3.5rem;
+#registration .registration-container .icon-content {
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*background-color: rgba(51, 190, 194, 0.65);*/
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    width: 18vw;
+    height: 18vw;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 4vw;
+}
+
+#registration .registration-container .icon-content i {
+    font-size: 6vw;
+}
+
+#registration .registration-container .icon-legend {
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 2vw;
+}
+
+#registration .registration-container  > div {
+    margin: 0 auto;
+}
+
+#registration-button {
+    height: 50px;
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    background: rgba(51, 190, 194, 0.8);
+    color: #fff!important;
+    font-weight: bold;
+    line-height: 50px;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    padding: 0 1.5rem;
+    text-align: center;
+    border: none;
+    float: none;
+    font-size: 1.3rem;
+    margin: 5rem auto;
 }
 
 /****************sponsors****************/
@@ -469,14 +424,14 @@ header .by img{
 } 
 
 .sponsors .sponsor-image {
-    padding: 0 2rem;
+    /*padding: 0 2rem;*/
     max-width: 100%;
     max-height: 50px;
     vertical-align: inherit;
 }
 
 #sponsors .sponsors-row {
-    padding: 1rem 4rem 0 4rem;
+    padding: 1rem 0 0 0;
     text-align: center;
 }
 
@@ -512,11 +467,11 @@ header .by img{
 #behind a i {
     margin: 0 1rem;
     font-size: 3rem;
-    color: white;
+    color: black;
 }
 
 #behind .institutional {
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 #behind .institutional .image {
