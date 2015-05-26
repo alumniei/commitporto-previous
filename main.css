@@ -106,6 +106,12 @@ section .container {
     padding: 0 0.5rem;
 }
 
+.custom-small-5-cols {
+    width: 19%; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /****************landing****************/
 
 header {
@@ -169,12 +175,6 @@ header .by {
 
 header .by img{
     width: 200px;
-}
-
-.custom-small-5-cols {
-    width: 20%;
-    margin: 0 auto;
-    display: inline-block;
 }
 
 /****************top-bar****************/
@@ -472,12 +472,19 @@ header .by img{
 }
 
 #behind .institutional {
-    margin: 1rem auto;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#behind .institutional .columns {
+  
 }
 
 #behind .institutional .image {
     max-width: 100%;
-    max-height: 3rem;
+    max-height: 50px;
 }
 
 /****************animations****************/
