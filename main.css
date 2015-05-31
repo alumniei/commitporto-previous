@@ -426,8 +426,7 @@ header .by img{
 
 .sponsors .sponsor-image {
     /*padding: 0 2rem;*/
-    max-width: 100%;
-    max-height: 50px;
+    max-width: 90%;
     vertical-align: inherit;
 }
 
@@ -441,9 +440,17 @@ header .by img{
     line-height: 170px;
 }
 
+.sponsors .sponsors-container .diamond .sponsor-image {
+    max-height: 70px;
+}
+
 .sponsors .sponsors-container .silver {
     height: 100px;
     line-height: 100px;
+}
+
+.sponsors .sponsors-container .silver .sponsor-image {
+    max-height: 50px;
 }
 
 .sponsors .sponsors-container .institutional {
