@@ -517,15 +517,17 @@ header .by img{
     color: #3a3a47;
     width: 90%;
     text-align: right;
+    position: relative;
+    padding-bottom: 2rem;
 }
 
 #schedule ul li:after {
     position: absolute;
     display: block;
-    left: calc(75% - 6px);
+    left: 82.5%;
+    top: 3px;
     width: 12px;
     height: 12px;
-    margin-top: -18px;
     content: "";
     background-color: #fff;
     border: 1px solid #2dbfc2;
@@ -543,13 +545,17 @@ header .by img{
     margin-top: 1px;
     display: inline-block;
     padding-left: 10px;
+    width: 15%;
+    vertical-align: top;
+
 }
 
-#schedule h6 {
-    text-transform: none;
-    margin-bottom: 4px;
+#schedule  .h6 {
+    width: 80%;
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 10px;
+    text-align: right;
+
 }
 
 #schedule ul li.light:after {
