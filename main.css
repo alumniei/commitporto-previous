@@ -503,7 +503,7 @@ header .by img{
     position: absolute;
     display: block;
     top: 55px;
-    left: 75%;
+    left: 77%;
     width: 2px;
     height: 94%;
     margin-top: -18px;
@@ -515,7 +515,7 @@ header .by img{
     /*padding: 25px 2rem 5px 0;*/
     padding: 0;
     color: #3a3a47;
-    width: 90%;
+    width: 100%;
     text-align: right;
     position: relative;
     padding-bottom: 2rem;
@@ -524,7 +524,7 @@ header .by img{
 #schedule ul li:after {
     position: absolute;
     display: block;
-    left: 82.5%;
+    left: 76.5%;
     top: 3px;
     width: 12px;
     height: 12px;
@@ -539,21 +539,22 @@ header .by img{
 
 #schedule time {
     font-size: 14px;
-    font-family: "Lodgecode", "Helvetica Neue", helvetica, sans-serif;
     text-transform: uppercase;
-    color: #a1a6ad;
+    /*color: #a1a6ad;*/
     margin-top: 1px;
     display: inline-block;
     padding-left: 10px;
-    width: 15%;
+    padding-right: 10px;
+    width: 20%;
     vertical-align: top;
+    background-color: rgba(51, 190, 194, 0.65);
 
 }
 
 #schedule  .h6 {
-    width: 80%;
+    width: 79%;
     display: inline-block;
-    padding-right: 10px;
+    padding-right: 20px;
     text-align: right;
 
 }
@@ -574,6 +575,6 @@ header .by img{
 #schedule ul li.light,
 #schedule ul li.light time,
 #schedule ul li.light h6 {
-    color: #a1a6ad;
+    /*color: #a1a6ad;*/
     font-weight: normal;
 }
