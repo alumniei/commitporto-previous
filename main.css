@@ -30,6 +30,24 @@ p {
     line-height: 2.2;
 }
 
+p.normal {
+    text-transform: initial;
+}
+
+span.name {
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: bold;
+    display: inherit;
+    font-size: 1.3rem;
+}
+
+small {
+    font-size: 0.8rem;
+    display: inherit;
+    padding-top: 10px;
+}
+
 p strong {
     color: white;
     font-size: 1.1rem;
@@ -209,6 +227,10 @@ header .by img{
     padding-top: 2rem;
 }
 
+.speaker {
+    height: 310px;
+}
+
 #speakers .speaker-name,
 #speakers .speaker-title,
 #speakers .speak-title {
@@ -292,7 +314,6 @@ header .by img{
     -o-transition: all 0.2s;
     overflow: hidden;
 }
-
 /****************location****************/
 
 #venue {
@@ -577,4 +598,29 @@ header .by img{
 #schedule ul li.light h6 {
     /*color: #a1a6ad;*/
     font-weight: normal;
+}
+
+.reveal-modal img {
+    width: 20%;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.modal-bio {
+    display: table; 
+    height: 200px; 
+    overflow: hidden;
+}
+
+.modal-bio-inner {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.modal-social {
+    color: #515050;
+    margin: 5px;
 }

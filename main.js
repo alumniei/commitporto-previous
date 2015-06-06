@@ -50,8 +50,10 @@ $(document).ready(function () {
     var height =
     $(document).on("scroll", onScroll);
     
+    $(document).foundation();
+    
     //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
+    $('.top-bar-section a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
       
