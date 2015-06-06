@@ -254,6 +254,7 @@ header .by img{
     position: relative;
     width: 70%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 #speakers .speaker-social a i {
