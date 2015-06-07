@@ -30,6 +30,24 @@ p {
     line-height: 2.2;
 }
 
+p.normal {
+    text-transform: initial;
+}
+
+span.name {
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: bold;
+    display: inherit;
+    font-size: 1.3rem;
+}
+
+small {
+    font-size: 0.8rem;
+    display: inherit;
+    padding-top: 10px;
+}
+
 p strong {
     color: white;
     font-size: 1.1rem;
@@ -209,6 +227,10 @@ header .by img{
     padding-top: 2rem;
 }
 
+.speaker {
+    height: 310px;
+}
+
 #speakers .speaker-name,
 #speakers .speaker-title,
 #speakers .speak-title {
@@ -232,6 +254,7 @@ header .by img{
     position: relative;
     width: 70%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 #speakers .speaker-social a i {
@@ -292,7 +315,6 @@ header .by img{
     -o-transition: all 0.2s;
     overflow: hidden;
 }
-
 /****************location****************/
 
 #venue {
@@ -494,77 +516,114 @@ header .by img{
     max-height: 50px;
 }
 
-/****************animations****************/
-/*@-moz-keyframes dropLogo {
-    0% {
-        -moz-transform: translate(0%,-200%);
-        opacity: 0;
-    }
-    100% {
-        -moz-transform: translate(0%,-50%);
-        opacity: 1;
-    }
+/****************schedule****************/
+#schedule ul {
+    list-style: none;
 }
-@-webkit-keyframes dropLogo {
-    0% {
-        -webkit-transform: translate(0%,-200%);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translate(0%,-50%);
-        opacity: 1;
-    }
-}
-@keyframes dropLogo {
-    0% {
-        transform: translate(0%,-200%);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0%,-50%);
-        opacity: 1;
-    }
-}*/
 
-/*@-moz-keyframes upInfo {
-    0% {
-        -moz-transform: translate(0%, 0%);
-        opacity: 0;
-    }
-    50% {
-        -moz-transform: translate(0%, 0%);
-        opacity: 0;
-    }
-    100% {
-        -moz-transform: translate(0%,-50%);
-        opacity: 1;
-    }
+#schedule ul:after {
+    position: absolute;
+    display: block;
+    top: 55px;
+    left: 77%;
+    width: 2px;
+    height: 94%;
+    margin-top: -18px;
+    content: "";
+    background-color: #e7e9ea;
 }
-@-webkit-keyframes upInfo {
-    0% {
-        -webkit-transform: translate(0%,0%);
-        opacity: 0;
-    }
-    50% {
-        -webkit-transform: translate(0%,0%);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translate(0%,-50%);
-        opacity: 1;
-    }
+
+#schedule ul li {
+    /*padding: 25px 2rem 5px 0;*/
+    padding: 0;
+    color: #3a3a47;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    padding-bottom: 2rem;
 }
-@keyframes upInfo {
-    0% {
-        transform: translate(0%, 0%);
-        opacity: 0;
-    }
-    50% {
-        transform: translate(0%, 0%);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0%,-50%);
-        opacity: 1;
-    }
-}*/
+
+#schedule ul li:after {
+    position: absolute;
+    display: block;
+    left: 76.5%;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    content: "";
+    background-color: #fff;
+    border: 1px solid #2dbfc2;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#schedule time {
+    font-size: 14px;
+    text-transform: uppercase;
+    /*color: #a1a6ad;*/
+    margin-top: 1px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 20%;
+    vertical-align: top;
+    background-color: rgba(51, 190, 194, 0.65);
+
+}
+
+#schedule  .h6 {
+    width: 79%;
+    display: inline-block;
+    padding-right: 20px;
+    text-align: right;
+
+}
+
+#schedule ul li.light:after {
+    background-color: #fff;
+    border-color: #d6d8d9;
+}
+
+#schedule ul li,
+#schedule ul li time,
+#schedule ul li h6 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#schedule ul li.light,
+#schedule ul li.light time,
+#schedule ul li.light h6 {
+    /*color: #a1a6ad;*/
+    font-weight: normal;
+}
+.h6.highlight {
+    cursor: pointer;
+}
+.reveal-modal img {
+    width: 20%;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.modal-bio {
+    display: table; 
+    height: 200px; 
+    overflow: hidden;
+}
+
+.modal-bio-inner {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.modal-social {
+    color: #515050;
+    margin-left: 5px;
+}
