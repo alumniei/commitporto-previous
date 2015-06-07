@@ -219,11 +219,11 @@ header .by img{
 
 /****************speakers****************/
 
-#speakers {
+#agenda {
     text-align: center;
 }
 
-#speakers .columns {
+#agenda .columns {
     padding-top: 2rem;
 }
 
@@ -231,43 +231,43 @@ header .by img{
     height: 310px;
 }
 
-#speakers .speaker-name,
-#speakers .speaker-title,
-#speakers .speak-title {
+#agenda .speaker-name,
+#agenda .speaker-title,
+#agenda .speak-title {
     text-align: center;
 }
 
-#speakers .speaker-name {
+#agenda .speaker-name {
     padding-top: 1rem;
     font-size: 1.5rem;
     color: black;
     padding-bottom: 0.5rem;
 }
 
-#speakers .speaker-title {
+#agenda .speaker-title {
     font-size: 0.75rem;
     color: black;
     font-weight: 800;
 }
 
-#speakers .speaker-box {
+#agenda .speaker-box {
     position: relative;
     width: 70%;
     margin: 0 auto;
     cursor: pointer;
 }
 
-#speakers .speaker-social a i {
+#agenda .speaker-social a i {
     color: black;
     font-size: 1.5rem;
 }
 
-#speakers .speaker-box:hover .speak-title {
+#agenda .speaker-box:hover .speak-title {
   visibility: visible;
   opacity: 1;
 }
 
-#speakers .speak-title {
+#agenda .speak-title {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -287,7 +287,7 @@ header .by img{
     opacity: 0;
 }
 
-#speakers .speak-title p {
+#agenda .speak-title p {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -298,7 +298,7 @@ header .by img{
     border: 1px solid transparent;
 }
 
-#speakers .speaker-photo {
+#agenda .speaker-photo {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
