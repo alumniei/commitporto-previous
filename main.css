@@ -424,6 +424,11 @@ header .by img{
     margin: 5rem auto;
 }
 
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
 /****************sponsors****************/
 
 .sponsors{
