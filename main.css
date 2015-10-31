@@ -424,6 +424,34 @@ header .by img{
     margin: 5rem auto;
 }
 
+#videos-button {
+    height: 50px;
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    background: rgba(51, 190, 194, 0.8);
+    color: #fff!important;
+    font-weight: bold;
+    line-height: 50px;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    padding: 0 !important;
+    text-align: center;
+    border: none;
+    float: none;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+}
+
 .not-active {
    pointer-events: none;
    cursor: default;
