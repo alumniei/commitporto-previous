@@ -1,0 +1,108 @@
+$padding: 20px;
+
+html, body, h1, h2, h3 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /*fallback*/
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html, 
+body {
+	margin: 0;
+	height: 100%;
+	z-index: 0;
+
+}
+
+video {
+	position: absolute;
+	min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+nav {
+	bottom: 0;
+	font-size: 18px;
+	padding-bottom: $padding;
+	padding-top: $padding;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+
+	a {
+		padding-left: $padding;
+		padding-right: $padding;
+
+		&:hover {
+			position: relative;
+
+			&:after {
+				content: '';
+				height: 2px;
+				background-color: white;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: -1px;
+			}
+		}
+	}
+
+	&:hover {
+		background-color: #2dbfc2;
+	}
+}
+
+#landing {
+	height: 100%;
+	overflow: hidden; 
+	position: relative;
+}
+
+#container {
+	padding: $padding;
+}
+
+#alumni-logo {
+	width: 150px;
+	display: block;
+}
+
+#commit-logo {
+	display: block;
+    margin: 0 auto;
+    padding-top: 4*$padding;
+}
+
+//GERAL//
+$colors: ('white': #ffffff);
+$f-sizes: (12, 14, 18, 20, 22);
+
+a {
+	text-decoration: none;
+}
+
+.t-center {
+	text-align: center;
+}
+
+@each $color, $hex in $colors {
+	.#{$color} {
+		&,
+		> * {
+			color: $hex;
+		}
+	}
+}
+
+@each $size in $f-sizes {
+	.f-#{$size} {
+		&,
+		> * {
+			font-size: $size + px;
+		}
+	}
+}

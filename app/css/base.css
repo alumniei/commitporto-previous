@@ -1,0 +1,90 @@
+html, body, h1, h2, h3 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*fallback*/
+  font-family: 'Titillium Web', sans-serif; }
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  z-index: 0; }
+
+video {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: 100%;
+  z-index: -1; }
+
+nav {
+  bottom: 0;
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1; }
+  nav a {
+    padding-left: 20px;
+    padding-right: 20px; }
+    nav a:hover {
+      position: relative; }
+      nav a:hover:after {
+        content: '';
+        height: 2px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1px; }
+  nav:hover {
+    background-color: #2dbfc2; }
+
+#landing {
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+#container {
+  padding: 20px; }
+
+#alumni-logo {
+  width: 150px;
+  display: block; }
+
+#commit-logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 80px; }
+
+a {
+  text-decoration: none; }
+
+.t-center {
+  text-align: center; }
+
+.white,
+.white > * {
+  color: #ffffff; }
+
+.f-12,
+.f-12 > * {
+  font-size: 12px; }
+
+.f-14,
+.f-14 > * {
+  font-size: 14px; }
+
+.f-18,
+.f-18 > * {
+  font-size: 18px; }
+
+.f-20,
+.f-20 > * {
+  font-size: 20px; }
+
+.f-22,
+.f-22 > * {
+  font-size: 22px; }
