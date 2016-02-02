@@ -8,9 +8,9 @@ var gulp = require('gulp'),
 
 gulp.task('run', ['browser-sync', 'compile-sass', 'concat-minify'], function() {
 	gulp.watch('app/scss/*.scss', ['compile-sass']);
-	gulp.watch('app/*.html', browserSync.reload); 
-  	gulp.watch('app/js/**/*.js', browserSync.reload); 
-})
+	gulp.watch('app/*.html', browserSync.reload);
+  	gulp.watch('app/js/**/*.js', browserSync.reload);
+});
 
 /** CSS tasks **/
 gulp.task('compile-sass', function(){
@@ -19,7 +19,7 @@ gulp.task('compile-sass', function(){
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({
 	     	stream: true
-	    }))
+	    }));
 });
 
 /** SYNC tasks **/
@@ -28,8 +28,8 @@ gulp.task('browser-sync', function() {
 	    server: {
 	      baseDir: 'app'
 	    },
-  })
-})
+  });
+});
 
 /** CONCAT/MINIFY tasks **/
 gulp.task('concat-minify', function(){
@@ -37,5 +37,5 @@ gulp.task('concat-minify', function(){
 	    .pipe(useref())
 	    .pipe(gulpIf('*.js', uglify()))
     	.pipe(gulpIf('*.css', cssnano()))
-	    .pipe(gulp.dest('dist'))
+	    .pipe(gulp.dest('dist'));
 });

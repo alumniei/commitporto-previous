@@ -49,7 +49,8 @@ nav {
 #landing {
   height: 100%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  z-index: -2; }
 
 #container {
   padding: 20px; }
@@ -58,16 +59,20 @@ nav {
   width: 150px;
   display: block; }
 
-#commit-logo {
-  display: block;
-  margin: 0 auto;
-  padding-top: 80px; }
-
 a {
   text-decoration: none; }
 
+.block {
+  display: block; }
+
 .t-center {
   text-align: center; }
+
+.vh-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 .white, nav a {
   color: #ffffff; }
@@ -80,6 +85,12 @@ a {
 
 .blue-bg, nav, nav.bottom:hover {
   background-color: #2dbfc2; }
+
+.black {
+  color: #000000; }
+
+.black-bg, #landing {
+  background-color: #000000; }
 
 .f-12 {
   font-size: 12px; }

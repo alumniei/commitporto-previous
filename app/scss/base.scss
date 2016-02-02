@@ -5,7 +5,7 @@ html, body, h1, h2, h3 {
     font-family: 'Titillium Web', sans-serif;
 }
 
-html, 
+html,
 body {
 	margin: 0;
 	height: 100%;
@@ -53,7 +53,7 @@ nav {
 		}
 	}
 
-	
+
 
 	&.bottom {
 		background-color: transparent;
@@ -69,9 +69,11 @@ nav {
 }
 
 #landing {
+	@extend .black-bg;
 	height: 100%;
-	overflow: hidden; 
+	overflow: hidden;
 	position: relative;
+	z-index: -2;
 }
 
 #container {
@@ -83,26 +85,31 @@ nav {
 	display: block;
 }
 
-#commit-logo {
-	display: block;
-    margin: 0 auto;
-    padding-top: 4*$padding;
-}
-
 #about {
 	@extend .white-bg;
 }
 
 //GERAL//
-$colors: ('white': #ffffff, 'blue': #2dbfc2);
+$colors: ('white': #ffffff, 'blue': #2dbfc2, 'black': #000000);
 $f-sizes: (12, 14, 18, 20, 22);
 
 a {
 	text-decoration: none;
 }
 
+.block {
+	display: block;
+}
+
 .t-center {
 	text-align: center;
+}
+
+.vh-center {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @each $color, $hex in $colors {
