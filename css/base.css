@@ -1,0 +1,112 @@
+html, body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*fallback*/
+  font-family: 'Titillium Web', sans-serif; }
+
+h1, h2, h3 {
+  font-family: 'Poiret One', sans-serif; }
+
+html,
+body {
+  margin: 0;
+  height: 100%; }
+
+video {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: 100%; }
+
+nav {
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: fixed;
+  transition: all, 500ms, ease;
+  text-align: center;
+  width: 100%;
+  z-index: 1; }
+  nav a {
+    padding-left: 20px;
+    padding-right: 20px; }
+    nav a:hover {
+      position: relative; }
+      nav a:hover:after {
+        background-color: white;
+        bottom: -1px;
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100%; }
+  nav.bottom {
+    background-color: transparent;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    position: absolute; }
+
+#landing {
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+#container {
+  height: 100%;
+  padding: 20px;
+  position: relative; }
+  #container a {
+    text-decoration: underline; }
+
+#alumni-logo {
+  width: 150px;
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+.block {
+  display: block; }
+
+.t-center {
+  text-align: center; }
+
+.vh-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.white, nav a {
+  color: #ffffff; }
+
+.white-bg, #about {
+  background-color: #ffffff; }
+
+.blue {
+  color: #2dbfc2; }
+
+.blue-bg, nav, nav.bottom:hover {
+  background-color: #2dbfc2; }
+
+.black {
+  color: #000000; }
+
+.black-bg, #landing {
+  background-color: #000000; }
+
+.f-12 {
+  font-size: 12px; }
+
+.f-14 {
+  font-size: 14px; }
+
+.f-18 {
+  font-size: 18px; }
+
+.f-20 {
+  font-size: 20px; }
+
+.f-22 {
+  font-size: 22px; }
