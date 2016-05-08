@@ -1,14 +1,17 @@
 html, body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*fallback*/
-  font-family: 'Titillium Web', sans-serif; }
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*fallback*/
+    font-family: 'Titillium Web', sans-serif; 
+    margin: 0;
+    height: 100%; 
+}
 
 h1, h2, h3 {
-  font-family: 'Poiret One', sans-serif;
+    font-family: 'Poiret One', sans-serif;
     text-align: center;
     color: white;/*#262322;*/ 
     background-color: transparent;
-    }
+}
 
 h1 {
     margin: 0;
@@ -24,131 +27,120 @@ h2 {
     line-height: 1.4em;
 }
   
-html,
-body {
-  margin: 0;
-  height: 100%; }
-
 video {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  height: auto;
-  width: 100%; }
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+}
 
-nav {
-  font-size: 18px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  position: fixed;
-  transition: all, 500ms, ease;
-  text-align: center;
-  width: 100%;
-  z-index: 1; }
-  nav a {
-    padding-left: 20px;
-    padding-right: 20px; }
-    nav a:hover {
-      position: relative; }
-      nav a:hover:after {
-        background-color: white;
-        bottom: -1px;
-        content: '';
-        height: 2px;
-        left: 0;
-        position: absolute;
-        width: 100%; }
-  nav.bottom {
-    background-color: transparent;
-    bottom: 0;
-    padding-bottom: 20px;
-    padding-top: 80px;
-    position: absolute; }
-    
 #about {
     background-image:url("../images/bg-connect.png");
     background-repeat: repeat-y repeat-x;
 }
 
 #landing {
-  height: 100%;
-  overflow: hidden;
-  position: relative; }
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
 #container {
-  height: 100%;
-  padding: 20px;
-  position: relative; }
-  #container a {
-    text-decoration: underline; }
+    height: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+#container a {
+    text-decoration: underline;
+}
 
 #alumni-logo {
-  width: 150px;
-  display: block; }
+    width: 150px;
+    display: block;
+}
 
-  #photos {
-  /* Prevent vertical gaps */
-  line-height: 0;
-   
-  -webkit-column-count: 3;
-  -webkit-column-gap:   0px;
-  -moz-column-count:    3;
-  -moz-column-gap:      0px;
-  column-count:         3;
-  column-gap:           0px;  
+#photos {
+    /* Prevent vertical gaps */
+    /*line-height: 0;
+
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    3;
+    -moz-column-gap:      0px;
+    column-count:         3;
+    column-gap:           0px;  */
 }
 
 #photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-  opacity: 0.8;
+    /* Just in case there are inline attributes */
+  /*  width: 100% !important;
+    height: auto !important;*/
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
 }
-  
+
 a {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 .block {
-  display: block; }
+    display: block; 
+}
 
 .t-center {
-  text-align: center; }
+    text-align: center;
+}
 
 .vh-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
-.white, nav a {
-  color: #ffffff; }
+.white {
+    color: #ffffff;
+}
 
-.white-bg, #about {
-  background-color: #ffffff; }
+.white-bg {
+    background-color: #ffffff;
+}
 
 .blue {
-  color: #2dbfc2; }
+    color: #2dbfc2;
+}
 
-.blue-bg, nav, nav.bottom:hover {
-  background-color: #2dbfc2; }
+.blue-bg {
+    background-color: #2dbfc2;
+}
 
 .black {
-  color: #000000; }
+    color: #000000; 
+}
 
-.black-bg, #landing {
-  background-color: #000000; }
+.black-bg {
+    background-color: #000000;
+}
 
 .f-12 {
-  font-size: 12px; }
+    font-size: 12px; 
+}
 
 .f-14 {
-  font-size: 14px; }
+    font-size: 14px; 
+}
 
 .f-18 {
-  font-size: 18px; }
+    font-size: 18px; 
+}
 
 .f-20 {
-  font-size: 20px; }
+    font-size: 20px; 
+}
 
 .f-22 {
-  font-size: 22px; }
+    font-size: 22px; 
+}
