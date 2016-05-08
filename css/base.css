@@ -9,19 +9,12 @@ html, body {
 h1, h2, h3 {
     font-family: 'Poiret One', sans-serif;
     text-align: center;
-    color: white;/*#262322;*/ 
+    color: #515151;/*#262322;*/ 
     background-color: transparent;
 }
 
-h1 {
-    margin: 0;
-    padding: 120px 30% 20px 30%;
-}
-  
-  
 h2 {
     margin: 0;
-    padding: 15px 340px 120px 340px;
     font-size: x-large;
     font-weight: bold;
     line-height: 1.4em;
@@ -36,8 +29,15 @@ video {
 }
 
 #about {
-    background-image:url("../images/bg-connect.png");
+    /*background-image:url("../images/bg-connect.png");*/
+    background-color: white;
     background-repeat: repeat-y repeat-x;
+    margin: 80px;
+}
+
+#about h2 {
+    width: 700px;
+    margin: auto;
 }
 
 #landing {
@@ -80,6 +80,54 @@ video {
     opacity: 0.8;
     width: 100%;
     padding: 0;
+}
+
+#speakers {
+    background-color: white;
+    padding: 0 140px;
+    /*background-image:url("../images/bg-connect.png");*/
+}
+
+#speakers img {
+    width: 100%;
+}
+
+#speakers .top {
+    font-size: 0;
+    padding: 10px;
+}
+
+#speakers .details {
+    background-color: #CCCCCC;
+    text-align: center;
+    font-size: 10pt;
+}
+
+#speakers .details .name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #515151;
+}
+
+#speakers .details .company {
+    margin-top: 0px;
+}
+
+#speakers .details .introduction {
+    padding: 10px;
+    height: 150px;
+}
+
+.title {
+    color: #515151; 
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 58px;
+    margin: 58px 0 0;
+    text-align: left;
 }
 
 a {
