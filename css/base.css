@@ -4,8 +4,26 @@ html, body {
   font-family: 'Titillium Web', sans-serif; }
 
 h1, h2, h3 {
-  font-family: 'Poiret One', sans-serif; }
+  font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    color: white;/*#262322;*/ 
+    background-color: transparent;
+    }
 
+h1 {
+    margin: 0;
+    padding: 120px 30% 20px 30%;
+}
+  
+  
+h2 {
+    margin: 0;
+    padding: 15px 340px 120px 340px;
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+  
 html,
 body {
   margin: 0;
@@ -46,6 +64,11 @@ nav {
     padding-bottom: 20px;
     padding-top: 80px;
     position: absolute; }
+    
+#about {
+    background-image:url("../images/bg-connect.png");
+    background-repeat: repeat-y repeat-x;
+}
 
 #landing {
   height: 100%;
@@ -63,6 +86,25 @@ nav {
   width: 150px;
   display: block; }
 
+  #photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  opacity: 0.8;
+}
+  
 a {
   text-decoration: none; }
 
