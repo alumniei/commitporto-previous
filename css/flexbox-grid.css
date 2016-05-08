@@ -85,6 +85,36 @@
   padding-left: 0.5rem;
 }
 
+.row.collapse .col-xs,
+.row.collapse .col-xs-1,
+.row.collapse .col-xs-2,
+.row.collapse .col-xs-3,
+.row.collapse .col-xs-4,
+.row.collapse .col-xs-5,
+.row.collapse .col-xs-6,
+.row.collapse .col-xs-7,
+.row.collapse .col-xs-8,
+.row.collapse .col-xs-9,
+.row.collapse .col-xs-10,
+.row.collapse .col-xs-11,
+.row.collapse .col-xs-12,
+.row.collapse .col-xs-offset-0,
+.row.collapse .col-xs-offset-1,
+.row.collapse .col-xs-offset-2,
+.row.collapse .col-xs-offset-3,
+.row.collapse .col-xs-offset-4,
+.row.collapse .col-xs-offset-5,
+.row.collapse .col-xs-offset-6,
+.row.collapse .col-xs-offset-7,
+.row.collapse .col-xs-offset-8,
+.row.collapse .col-xs-offset-9,
+.row.collapse .col-xs-offset-10,
+.row.collapse .col-xs-offset-11,
+.row.collapse .col-xs-offset-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .col-xs {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1066,4 +1096,13 @@
     -ms-flex-order: 1;
     order: 1;
   }
+}
+
+.col-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-grow > :last-child {
+  flex-grow: 1;
 }
