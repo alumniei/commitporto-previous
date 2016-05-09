@@ -92,13 +92,17 @@ video {
     width: 100%;
 }
 
-#speakers .top {
+#speakers .box {
     font-size: 0;
-    padding: 10px;
+    -webkit-box-shadow: 0 14px 10px -12px #515151;
+       -moz-box-shadow: 0 14px 10px -12px #515151;
+	        box-shadow: 0 14px 10px -12px #515151;
+    margin-bottom: 20px;
+    
 }
 
 #speakers .details {
-    background-color: #CCCCCC;
+    background-color: #f3f3f3;
     text-align: center;
     font-size: 10pt;
 }
@@ -107,13 +111,14 @@ video {
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 10px;
-    font-weight: bold;
-    font-size: 15pt;
+    font-size: 20px;
     color: #515151;
+    padding-bottom: 0px;
 }
 
 #speakers .details .company {
     margin-top: 0px;
+    padding-bottom: 10px;
 }
 
 #speakers .details .introduction {
