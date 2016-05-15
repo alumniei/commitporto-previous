@@ -1,24 +1,15 @@
-@keyframes blur {
-    to { -webkit-filter: blur(7px) sepia(0.3) opacity(0.6); }
-}
-
 @keyframes opacity {
     to { opacity: 1 }
 }
 
-video {
-    -webkit-filter: blur(0) sepia(0.3) opacity(0.6); 
-    animation: blur 5s 2s forwards;
-}
-
 .logo {
     opacity: 0;
-    animation: opacity 2s 3s forwards;
+    animation: opacity 2s 1s forwards;
 }
 
 .alumni {
     opacity: 0;
-    animation: opacity 2s 3.5s forwards;
+    animation: opacity 2s 1.5s forwards;
 }
 
 
