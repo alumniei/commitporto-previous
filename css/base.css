@@ -90,30 +90,33 @@ img {
 }
 
 #photos {
-    /* Prevent vertical gaps */
-    /*line-height: 0;
-
-    -webkit-column-count: 3;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    3;
-    -moz-column-gap:      0px;
-    column-count:         3;
-    column-gap:           0px;  */
+    position: relative;
 }
 
 #photos img {
-    /* Just in case there are inline attributes */
-  /*  width: 100% !important;
-    height: auto !important;*/
     opacity: 0.8;
     width: 100%;
     padding: 0;
 }
 
+#connections {
+    position: absolute;
+    background: rgba(255,255,255,0.6);
+    padding: 10px 0;
+    text-align: center;
+    bottom: 10px;
+    right: 10px;
+}
+
+#connections img {
+    width: 40px;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
 #speakers {
     background-color: white;
     padding: 0 140px 80px;
-    /*background-image:url("../images/bg-connect.png");*/
 }
 
 #speakers img {
