@@ -12,9 +12,6 @@
     animation: opacity 2s 1.5s forwards;
 }
 
-
-
-
 html, body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*fallback*/
@@ -28,10 +25,10 @@ h1, h2, h3 {
     text-align: center;
     color: #515151;/*#262322;*/ 
     background-color: transparent;
+    margin: 10px 0;
 }
 
 h2 {
-    margin: 0;
     font-size: x-large;
     font-weight: bold;
     line-height: 1.4em;
@@ -57,15 +54,17 @@ img {
     max-width: 100%;
 }
 
-#about {
-    background-color: white;
-    background-repeat: repeat-y repeat-x;
-    margin: 80px;
+#about,
+#speakers {
+    margin: 50px auto;
 }
 
-#about h2 {
-    width: 700px;
-    margin: auto;
+#partners > .row {
+    padding: 50px 0;
+}
+
+#about {
+    background-color: white;
 }
 
 #landing {
@@ -120,7 +119,6 @@ img {
 
 #speakers {
     background-color: white;
-    padding: 0 140px 80px;
 }
 
 #speakers img {
@@ -131,9 +129,7 @@ img {
     font-size: 0;
     -webkit-box-shadow: 0 14px 10px -12px #515151;
        -moz-box-shadow: 0 14px 10px -12px #515151;
-	        box-shadow: 0 14px 10px -12px #515151;
-    margin-bottom: 20px;
-    
+	        box-shadow: 0 14px 10px -12px #515151;    
 }
 
 #speakers .details {
@@ -165,27 +161,14 @@ img {
     color: #515151; 
     font-size: 34px;
     font-weight: 300;
-    line-height: 58px;
-    margin: 58px 0 0;
     text-align: left;
-}
-
-.title-white {
-    color: white; 
-    font-size: 34px;
-    font-weight: 300;
-    line-height: 58px;
-    margin: 58px 0 0;
-    text-align: left;
-    padding: 0 10%;
 }
 
 #partners {
     background-image: url("../images/bg-connect.png");
 }
 
-.partner 
-{
+.partner {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     padding: 30px;
