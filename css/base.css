@@ -45,8 +45,19 @@ video {
     width: auto;
 }
 
+button {
+    background: none;
+    color: #2DBFC2;
+    border: 1px solid #2DBFC2;
+    line-height: 30px;
+    border-radius: 2px;
+}
+
+img {
+    max-width: 100%;
+}
+
 #about {
-    /*background-image:url("../images/bg-connect.png");*/
     background-color: white;
     background-repeat: repeat-y repeat-x;
     margin: 80px;
@@ -150,6 +161,34 @@ video {
     line-height: 58px;
     margin: 58px 0 0;
     text-align: left;
+}
+
+.title-white {
+    color: white; 
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 58px;
+    margin: 58px 0 0;
+    text-align: left;
+}
+
+#partners {
+    background-image: url("../images/bg-connect.png");
+    padding: 0 140px;
+}
+
+.partner 
+{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    padding: 30px;
+    opacity: 1;
+}
+
+.partner:hover 
+{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
 }
 
 a {
