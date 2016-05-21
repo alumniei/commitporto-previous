@@ -30,6 +30,7 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  max-width: 62rem;
 }
 
 .row .row {

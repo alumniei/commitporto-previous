@@ -110,6 +110,10 @@ img {
     padding: 0;
 }
 
+#photos .row {
+    max-width: 100%;
+}
+
 #speakers {
     background-color: white;
     padding: 0 140px 80px;
@@ -170,11 +174,11 @@ img {
     line-height: 58px;
     margin: 58px 0 0;
     text-align: left;
+    padding: 0 10%;
 }
 
 #partners {
     background-image: url("../images/bg-connect.png");
-    padding: 0 140px;
 }
 
 .partner 
