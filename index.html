@@ -74,10 +74,52 @@
         </section>
 		<!-- <script type="text/javascript" src="./js/base.js"></script> -->
         
-        <section id="speakers" class="row">
-            <h1 class="title col-xs-12">Check back soon to meet the speakers for this edition...</h1>
-        
-            <div class="box col-xs-6 col-sm-3">
+        <section id="speakers" class="row bottom-xs">
+            <h1 class="title col-xs-12">Check back soon to meet the remaining speakers for this edition...</h1>
+            
+            <div class="box card col-xs-12 col-sm-3 link" id="pedropacheco" onclick="showDetails('pedropacheco')">
+                <img src="images/speakers/pedro_pacheco.png">
+                <!--div class="speaker-linkage">
+                    <ul>
+                        <li class="tw"><a href="https://twitter.com/macadaan" target="_blank" title="Mike Macadaan on Twitter"><img src="http://2015.bigomaha.co/wp-content/themes/bigomaha_2015_post/assets/img/speaker-twitter.svg" alt=" > "></a></li>
+                    </ul>
+                    <a href="http://thisisground.com/" target="_blank" class="button ghost">Website <img src="http://2015.bigomaha.co/wp-content/themes/bigomaha_2015_post/assets/img/link_arrow.svg" alt=" > ">
+                </div-->
+                <div class="details">
+                    <div class="name">Pedro Pacheco</div>
+                    <div class="company">Software Engineer @ Spotify</div>
+                </div>
+            </div>
+            <div class="box col-xs-12" style="display:none; transition: all .2s ease-out;" id="pedropacheco-details">
+                <div class="row middle-xs">
+                    <div class="box card col-xs-12 col-sm-3 link" onclick="hideDetails('pedropacheco')">
+                        <img src="images/speakers/pedro_pacheco.png">
+                        <!--div class="speaker-linkage">
+                            <ul>
+                                <li class="tw"><a href="https://twitter.com/macadaan" target="_blank" title="Mike Macadaan on Twitter"><img src="http://2015.bigomaha.co/wp-content/themes/bigomaha_2015_post/assets/img/speaker-twitter.svg" alt=" > "></a></li>
+                            </ul>
+                            <a href="http://thisisground.com/" target="_blank" class="button ghost">Website <img src="http://2015.bigomaha.co/wp-content/themes/bigomaha_2015_post/assets/img/link_arrow.svg" alt=" > ">
+                        </div-->
+                        <div class="details">
+                            <div class="name">Pedro Pacheco</div>
+                            <div class="company">Software Engineer @ Spotify</div>
+                        </div>
+                    </div>
+                    <div class="box col-xs-12 col-sm-9">
+                        <h3 class="talk-title">Scaling music metadata distribution using Hadoop</h3>
+                        <p class="normal talk-description">New music metadata is added daily to Spotify's catalog, both from external providers and from internal sources of data. All the metadata for tracks, albums and artists needs to be processed and efficiently served to our users. As the amount of content increases, we need to adapt our backend to accommodate for the growth.<br>This talk will be focused on Spotify's backend for handling music metadata and on how we scaled one of the metadata datasets using Hadoop.
+</p>
+                        
+                        <div class="details">
+                            <small>Pedro is a backend engineer that has been working with Spotify's music metadata systems for the past 3 years. He has also worked at OutSystems and Portugal Telecom, after graduating from FEUP in 2010. Originally from the Porto area, you can now find him living in Stockholm. When not building software, Pedro will most likely be in the nearest swimming pool, enjoying some craft beer or travelling around the world.</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="box card col-xs-12 col-sm-3">
                 <img src="images/speakers/user.png">
                 <!--div class="speaker-linkage">
                     <ul>
@@ -165,5 +207,7 @@
                 document.getElementById('video').style.transform = 'translate3d(0, ' + (scrolled * 0.50)+ 'px, 0)'; 
             } ;
         </script>
+        
+        <script type="text/javascript" src="js/base.js"></script>
 	</body>
 </html>

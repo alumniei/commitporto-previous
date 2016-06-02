@@ -126,10 +126,13 @@ img {
 }
 
 #speakers .box {
-    font-size: 0;
+    font-size: 0; 
+}
+
+.card {
     -webkit-box-shadow: 0 14px 10px -12px #515151;
        -moz-box-shadow: 0 14px 10px -12px #515151;
-	        box-shadow: 0 14px 10px -12px #515151;    
+	        box-shadow: 0 14px 10px -12px #515151;   
 }
 
 #speakers .details {
@@ -155,6 +158,30 @@ img {
 #speakers .details .introduction {
     padding: 10px;
     height: 150px;
+}
+
+.talk-title {
+    font-size: 25px;
+}
+
+.talk-description {
+    font-size: 15px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+p.normal {
+    text-transform: initial;
+}
+
+span.name {
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: bold;
+    display: inherit;
+    font-size: 1.3rem;
 }
 
 .title {

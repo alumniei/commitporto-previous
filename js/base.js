@@ -1,4 +1,4 @@
-var Helpers = (function () {
+/*var Helpers = (function () {
 	'use strict';
 
 	var addClass = function (element, newClass) {
@@ -38,4 +38,20 @@ var Helpers = (function () {
 			Helpers.addClass(nav, 'bottom');
 		}
 	};
-})();
+})();*/
+
+function showDetails(name) {
+    var small = document.getElementById(name);
+    small.style.display = "none";
+    
+    var large = document.getElementById(name+"-details");
+    large.style.display = "";
+}
+
+function hideDetails(name) {
+    var small = document.getElementById(name);
+    small.style.display = "";
+    
+    var large = document.getElementById(name+"-details");
+    large.style.display = "none";
+}
