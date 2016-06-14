@@ -201,6 +201,11 @@ span.name {
     opacity: 1;
 }
 
+.links {
+    list-style-type: none;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
