@@ -194,8 +194,95 @@ span.name {
     text-align: left;
 }
 
-#partners {
-    
+/****************schedule****************/
+#schedule ul {
+    list-style: none;
+    position: relative;
+    padding-right: 50px;
+}
+
+#schedule ul:after {
+    position: absolute;
+    display: block;
+    top: 23px;
+    left: 68.5%;
+    width: 2px;
+    height: 96%;
+    margin-top: -18px;
+    content: "";
+    background-color: #515151;
+}
+
+#schedule ul li {
+    /*padding: 25px 2rem 5px 0;*/
+    padding: 0;
+    color: #3a3a47;
+    width: 93%;
+    text-align: right;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+#schedule ul li:after {
+    position: absolute;
+    display: block;
+    left: 78%;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    content: "";
+    background-color: #fff;
+    border: 1px solid #2dbfc2;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#schedule time {
+    font-size: 14px;
+    text-transform: uppercase;
+    /*color: #a1a6ad;*/
+    margin-top: 1px;
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    background-color: rgba(51, 190, 194, 0.65);
+    text-align: center;
+}
+
+#schedule h6 {
+    margin: 0;
+}
+
+#schedule .h6 {
+    width: 65%;
+    display: inline-block;
+    padding-right: 30px;
+    text-align: right;
+}
+
+#schedule ul li.light:after {
+    background-color: #fff;
+    border-color: #d6d8d9;
+}
+
+#schedule ul li,
+#schedule ul li time,
+#schedule ul li h6 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#schedule ul li.light,
+#schedule ul li.light time,
+#schedule ul li.light h6 {
+    /*color: #a1a6ad;*/
+    font-weight: normal;
+}
+.h6.highlight {
+    cursor: pointer;
 }
 
 #by {
