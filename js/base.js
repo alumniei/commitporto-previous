@@ -4,6 +4,8 @@ function showDetails(name) {
     
     var large = document.getElementById(name+"-details");
     large.style.display = "";
+
+    large.scrollIntoView();
 }
 
 function hideDetails(name) {
@@ -12,6 +14,8 @@ function hideDetails(name) {
     
     var large = document.getElementById(name+"-details");
     large.style.display = "none";
+
+    small.scrollIntoView();
 }
 
 function toggleDetails(name) {
