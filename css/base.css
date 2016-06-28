@@ -63,8 +63,6 @@ img {
     padding: 50px 0;
 }
 
-
-
 #about {
     background-color: white;
 }
@@ -287,6 +285,28 @@ span.name {
 
 #registration {
     background-color: #515151;
+    padding: 100px 0;
+}
+
+#registration * {
+    font-family: Lekton,Georgia,serif;
+    color: white;
+    line-height: 145%;
+}
+
+#registration ul {
+    list-style: none;
+    text-align: center;
+}
+
+#registration button {
+    background-color: #4fb0ae;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid black;
+    text-align: center;
+    margin: 40px auto 0;
 }
 
 #by {
