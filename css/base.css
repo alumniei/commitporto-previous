@@ -285,6 +285,10 @@ span.name {
     cursor: pointer;
 }
 
+#registration {
+    background-color: #515151;
+}
+
 #by {
     background-image: url("../images/bg-connect.png");
 }
