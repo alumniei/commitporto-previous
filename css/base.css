@@ -290,7 +290,7 @@ span.name {
 }
 
 .partner {
-    padding: 30px;
+    padding: 30px 5px;
     opacity: 1;
 }
 
@@ -365,4 +365,8 @@ a {
 
 .f-22 {
     font-size: 22px; 
+}
+
+.df {
+    display: flex;
 }
