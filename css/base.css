@@ -161,6 +161,11 @@ img {
     height: 150px;
 }
 
+.speakersocial {
+    padding: 0px 5px;
+    width: 20px !important;
+}
+
 .talk-title {
     font-size: 25px;
 }
