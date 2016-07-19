@@ -54,6 +54,8 @@ img {
     max-width: 100%;
 }
 
+img 
+
 #about,
 #speakers {
     margin: 50px auto;
@@ -172,6 +174,17 @@ img {
 
 .talk-description {
     font-size: 15px;
+}
+
+.talk-description a {
+    text-decoration: underline;
+    color: rgb(51, 190, 194);
+} 
+
+.talk-details {
+    width: 16px !important;
+    vertical-align: middle;
+    padding-left: 7px;
 }
 
 .link {
