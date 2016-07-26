@@ -54,7 +54,22 @@ img {
     max-width: 100%;
 }
 
-img 
+#news {
+    margin-top: 20px;
+}
+
+a.news-link {
+    color: rgb(51, 190, 194);
+    border: 2px solid rgb(51, 190, 194);
+    background-color: rgba(51, 190, 194,0.15);
+    font-size: large;
+    margin: 79px 21px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none !important;
+}
 
 #about,
 #speakers {
