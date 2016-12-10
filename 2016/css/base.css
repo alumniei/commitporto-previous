@@ -54,6 +54,23 @@ img {
     max-width: 100%;
 }
 
+#news {
+    margin-top: 20px;
+}
+
+a.news-link {
+    color: rgb(51, 190, 194);
+    border: 2px solid rgb(51, 190, 194);
+    background-color: rgba(51, 190, 194,0.15);
+    font-size: large;
+    margin: 79px 21px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
 #about,
 #speakers {
     margin: 50px auto;
@@ -62,8 +79,6 @@ img {
 #partners > .row {
     padding: 50px 0;
 }
-
-
 
 #about {
     background-color: white;
@@ -163,12 +178,28 @@ img {
     height: 150px;
 }
 
+.speakersocial {
+    padding: 0px 5px;
+    width: 20px !important;
+}
+
 .talk-title {
     font-size: 25px;
 }
 
 .talk-description {
     font-size: 15px;
+}
+
+.talk-description a {
+    text-decoration: underline;
+    color: rgb(51, 190, 194);
+} 
+
+.talk-details {
+    width: 16px !important;
+    vertical-align: middle;
+    padding-left: 7px;
 }
 
 .link {
@@ -285,18 +316,45 @@ span.name {
     cursor: pointer;
 }
 
+#registration {
+    background-color: #515151;
+    padding: 100px 0;
+}
+
+#registration * {
+    font-family: Lekton,Georgia,serif;
+    color: white;
+    line-height: 145%;
+}
+
+#registration ul {
+    list-style: none;
+    text-align: center;
+}
+
+#registration button {
+    background-color: #4fb0ae;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid black;
+    text-align: center;
+    margin: 40px auto 0;
+}
+
 #by {
     background-image: url("../images/bg-connect.png");
 }
 
 .partner {
-    padding: 30px;
+    padding: 30px 5px;
     opacity: 1;
 }
 
 .links {
     list-style-type: none;
     padding: 0;
+    font-size: 12px;
 }
 
 a {
@@ -365,4 +423,8 @@ a {
 
 .f-22 {
     font-size: 22px; 
+}
+
+.df {
+    display: flex;
 }

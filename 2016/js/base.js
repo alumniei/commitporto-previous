@@ -4,6 +4,8 @@ function showDetails(name) {
     
     var large = document.getElementById(name+"-details");
     large.style.display = "";
+
+    large.scrollIntoView();
 }
 
 function hideDetails(name) {
@@ -12,4 +14,26 @@ function hideDetails(name) {
     
     var large = document.getElementById(name+"-details");
     large.style.display = "none";
+
+    small.scrollIntoView();
+}
+
+function toggleDetails(name) {
+    var elem = document.getElementById(name);
+    if (elem.style.display == "")
+      showDetails(name);
+    else
+      hideDetails(name);
+}
+
+function highlightSpeaker(name) {
+  var small = document.getElementById(name);
+  var details = small.childNodes[3].childNodes[1];
+  details.style.textDecoration = "underline";
+}
+
+function removeHighlight(name) {
+  var small = document.getElementById(name);
+  var details = small.childNodes[3].childNodes[1];
+  details.style.textDecoration = "";
 }
