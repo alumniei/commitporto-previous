@@ -1,14 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   height: 100%;
   font-size: 12px;
 }
 
-html, body, button {
+html, body, .button {
   font-family: 'Open Sans', sans-serif;
 }
 
-button, .fancy {
+.button, .fancy {
   font-family: 'Poiret One', cursive;
 }
 
@@ -66,25 +70,50 @@ button, .fancy {
   font-size: 1em;
 }
 
-button {
+.show-on-call-for-speakers,
+.button.show-on-call-for-speakers,
+.hidden {
+  display: none;
+}
+
+#call-for-speakers:checked ~ .hide-on-call-for-speakers  {
+  display: none;
+}
+
+#call-for-speakers:checked ~ .show-on-call-for-speakers  {
+  display: initial;
+}
+
+.button {
+  cursor: pointer;
   font-weight: bold;
   height: 35px;
+  line-height: 35px;
   padding: 0 35px;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 20px;
   border: 0;
+  display: inline-block;
+  align-items: flex-start;
 }
 
-button:not(:first-child) {
+.button:active,
+input:active,
+input,
+.button {
+  outline: 0;
+}
+
+.button:not(:first-child) {
   margin-left: 10px;
 }
 
-button:not(:last-child) {
+.button:not(:last-child) {
   margin-right: 10px;
 }
 
-button.main-btn {
+.button.main-btn {
   color: #000;
   background: #fff;
 }
@@ -94,8 +123,8 @@ button.main-btn {
 }
 
 .small-text,
-button.white-btn {
-  font-size: 1em;
+.button.main-btn {
+  font-size: 0.8em;
 }
 
 .medium-text,
@@ -103,11 +132,32 @@ button.white-btn {
   font-size: 2em;
 }
 
-.spnsinput {
-    border-style: none;
-    background: transparent;
-    border: none;
-    border-bottom-style: outset;
-    border-bottom-color: white;
-    color: white;
+#sponsor-name {
+  width: 150px;
+}
+
+#sponsor-email {
+  width: 200px;
+}
+.sponsors-input {
+  background: transparent;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: #fff;
+  color: #fff;
+  border-width: 1px;
+  margin-right: 15px;
+  padding: 5px 0;
+}
+
+.button.disabled {
+  background: #949494;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #737373;
+}
+
+#success-message {
+  padding: 5px;
+  color: #f7941e;
 }
