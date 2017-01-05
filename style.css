@@ -8,11 +8,15 @@ html, body {
   font-size: 12px;
 }
 
-html, body, .button {
+html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.button, .fancy {
+a.button {
+  text-decoration: none;
+}
+
+.button, .fancy, h1, h2, h3 {
   font-family: 'Poiret One', cursive;
 }
 
