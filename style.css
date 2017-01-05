@@ -102,3 +102,12 @@ button.white-btn {
 #homepage .data {
   font-size: 2em;
 }
+
+.spnsinput {
+    border-style: none;
+    background: transparent;
+    border: none;
+    border-bottom-style: outset;
+    border-bottom-color: white;
+    color: white;
+}

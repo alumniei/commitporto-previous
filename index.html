@@ -33,7 +33,10 @@
         <div class="data normal-text fancy">June 3rd</div>
         <div class="actions">
           <button class="main-btn">Call for speakers</button>
-          <button class="main-btn">Call for sponsors</button>
+          <input type="hidden" class="spnsinput" id="cfsps_name" value="your name" />
+          <input type="hidden" class="spnsinput" id="cfsps_email" value="your email" />
+          <button class="main-btn" id="btn-cfsps-closed">Call for sponsors</button>
+          <button class="main-btn" id="btn-cfsps" style="display:none;">Details</button>
         </div>
         <div class="by">
           <a href="./2016" class="normal-text">2016</a><span class="normal-text"> | </span><a href="./2015" class="normal-text">2015</a>
@@ -41,5 +44,34 @@
         </div>
       </div>
 		</div>
+
+    <script>
+      document.getElementById("btn-cfsps-closed").onclick = function() {
+
+        document.getElementById("cfsps_name").type = "text";
+        document.getElementById("cfsps_email").type = "text";
+        document.getElementById("btn-cfsps-closed").style.display = "none";
+        document.getElementById("btn-cfsps").style.display = "block";
+      };
+      document.getElementById("btn-cfsps").onclick = function() {myFunction()};
+
+      function myFunction() {
+          var name = document.getElementById("cfsps_name").value;
+          var email = document.getElementById("cfsps_email").value;
+
+          xhr = new XMLHttpRequest();
+          var url = "https://hooks.slack.com/services/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";
+          xhr.open("POST", url, true);
+          xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var json = JSON.parse(xhr.responseText);
+                console.log(json.email + ", " + json.password)
+            }
+          }
+          var data = JSON.stringify({"text": "Chamo-me "+ name + " e quero patrocinar a commitporto:commitporto:! Enviem-me o prospectus para: " + email});
+          xhr.send(data);
+      }
+    </script>
   </body>
 </html>
