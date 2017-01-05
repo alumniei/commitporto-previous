@@ -33,6 +33,7 @@ button, .fancy {
   background-repeat: no-repeat;
   opacity: 0.85;
   background-size: cover; /* reduce background image and remove me */
+  background-position: 50%;
 }
 
 #homepage,
