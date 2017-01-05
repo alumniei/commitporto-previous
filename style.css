@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-size: 12px;
+}
+
+html, body, button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button, .fancy {
+  font-family: 'Poiret One', cursive;
+}
+
+#landing {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #000000;
+}
+
+#video {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+#layer-logo {
+  height: 100%;
+  background-image: url(./web2.png);
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  background-size: cover; /* reduce background image and remove me */
+}
+
+#homepage,
+#homepage .data,
+#homepage .actions,
+#homepage .by {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#homepage {
+  top: 0;
+}
+
+#homepage .data {
+  bottom: 30%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#homepage .actions {
+  bottom: 20%;
+}
+
+#homepage .by {
+  bottom: 5%;
+  font-size: 1em;
+}
+
+button {
+  font-weight: bold;
+  height: 35px;
+  padding: 0 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 0;
+}
+
+button:not(:first-child) {
+  margin-left: 10px;
+}
+
+button:not(:last-child) {
+  margin-right: 10px;
+}
+
+button.main-btn {
+  color: #000;
+  background: #fff;
+}
+
+.normal-text {
+  color: #949494;
+}
+
+.small-text,
+button.white-btn {
+  font-size: 1em;
+}
+
+.medium-text,
+#homepage .data {
+  font-size: 2em;
+}
