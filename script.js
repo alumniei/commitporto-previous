@@ -11,6 +11,7 @@ submit.onclick = () => {
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send(data);
+    submit.classList.add('disabled');
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState == 4 && xhr.status == 200) {
@@ -18,9 +19,8 @@ submit.onclick = () => {
         const successMessage = document.getElementById('success-message');
 
         callForSpeakers.click();
-        submit.classList.add('disabled');
         successMessage.classList.remove('hidden');
-        
+
         name.value = '';
         email.value = '';
       }
