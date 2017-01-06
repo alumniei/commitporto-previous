@@ -74,17 +74,17 @@ a.button {
   font-size: 1em;
 }
 
-.show-on-call-for-speakers,
-.button.show-on-call-for-speakers,
+.show-on-call-for-sponsors,
+.button.show-on-call-for-sponsors,
 .hidden {
   display: none;
 }
 
-#call-for-speakers:checked ~ .hide-on-call-for-speakers  {
+#call-for-sponsors:checked ~ .hide-on-call-for-sponsors  {
   display: none;
 }
 
-#call-for-speakers:checked ~ .show-on-call-for-speakers  {
+#call-for-sponsors:checked ~ .show-on-call-for-sponsors  {
   display: initial;
 }
 

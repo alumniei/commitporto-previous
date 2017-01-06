@@ -15,10 +15,10 @@ submit.onclick = () => {
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState == 4 && xhr.status == 200) {
-        const callForSpeakers = document.getElementById('call-for-speakers');
+        const callForSponsors = document.getElementById('call-for-sponsors');
         const successMessage = document.getElementById('success-message');
 
-        callForSpeakers.click();
+        callForSponsors.click();
         successMessage.classList.remove('hidden');
 
         name.value = '';
