@@ -16,6 +16,11 @@ a.button {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .button, .fancy, h1, h2, h3 {
   font-family: 'Poiret One', cursive;
 }
@@ -164,4 +169,10 @@ input,
 #success-message {
   padding: 5px;
   color: #f7941e;
+}
+
+#faq-body {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0 50px;
 }
