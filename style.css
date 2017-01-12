@@ -134,8 +134,12 @@ input,
   background: #fff;
 }
 
-.normal-text {
+.normal-text, .link {
   color: #949494;
+}
+
+.link {
+  text-decoration: underline;
 }
 
 .small-text,
