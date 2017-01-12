@@ -141,6 +141,7 @@ input,
 
 .link {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .small-text,
