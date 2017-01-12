@@ -17,7 +17,7 @@ a.button {
 }
 
 a:visited {
-    color: black;
+  color: black;
 }
 
 h1 {
@@ -134,7 +134,8 @@ input,
   background: #fff;
 }
 
-.normal-text, .link {
+.normal-text, .normal-text:visited,
+.link {
   color: #949494;
 }
 
