@@ -48,12 +48,12 @@ h1 {
   width: auto;
 }
 
+/* 242px logo height */
 #layer-logo {
   height: 100%;
-  background-image: url(./web2.png);
+  background-image: url(./web5.png);
   background-repeat: no-repeat;
   opacity: 0.85;
-  background-size: cover; /* reduce background image and remove me */
   background-position: 50%;
 }
 
@@ -64,25 +64,25 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
   text-align: center;
 }
 
 #homepage {
   top: 0;
+  bottom: 0;
 }
 
 #homepage .data {
-  bottom: 30%;
+  top: calc(50% + (242px / 2)); /* 242px logo height */
   text-align: center;
 }
 
 #homepage .actions {
-  bottom: 20%;
+  top: calc(50% + (242px / 2) + 24px + 3%); /* 242px logo height , 24px data height, 3% white space */
 }
 
 #homepage .by {
-  bottom: 5%;
+  bottom: 10px;
   font-size: 1em;
 }
 
