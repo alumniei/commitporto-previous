@@ -105,8 +105,8 @@ h1 {
   font-weight: bold;
   height: 35px;
   line-height: 35px;
-  padding: 0 20px;
-  letter-spacing: 2px;
+  padding: 0 2%;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 20px;
   border: 0;
