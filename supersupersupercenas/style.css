@@ -75,6 +75,11 @@ nav ul li:hover {
   border-color: #f7931d;
 }
 
+.logo {
+  max-height: 90%;
+  width: 250px;
+}
+
 /** video section **/
 .video-section {
   position: relative;
@@ -171,7 +176,7 @@ nav ul li:hover {
   filter: sepia(0.4) contrast(1.2);
 }
 
-.gallery-section > .prev-edition {
+.gallery-section > .see-more {
   background: #4c4c4c;
   color: white;
   display: flex;
@@ -180,6 +185,16 @@ nav ul li:hover {
   text-decoration: underline;
   letter-spacing: 2px;
   line-height: 25px;
+}
+
+.prev-edition {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+.prev-edition a {
+  padding: 0 10px;
 }
 
 /** scroll animation **/
@@ -310,6 +325,44 @@ nav ul li:hover {
   display: block;
 }
 
+.speaker-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.speaker-description {
+  padding-left: 20px;
+  max-width: 60%;
+}
+
+#speaker-name {
+  font-size: 2em;
+}
+
+#bio {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+#talk-name {
+  font-weight: bold;
+  padding-top: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#talk-description {
+  padding-top: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
 #close {
   position: absolute;
   right: 10%;
@@ -353,18 +406,24 @@ nav ul li:hover {
 
 .gold img {
   max-height: 100px;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .silver img {
   max-height: 70px;
-  max-width: 160px;
+  max-width: 190px;
 }
 
 /** footer **/
 footer {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   background: #4c4c4c;
+  line-height: 1.5;
+}
+
+footer,
+footer a,
+footer a:visited {
   color: white;
 }

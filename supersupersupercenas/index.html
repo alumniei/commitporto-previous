@@ -24,18 +24,18 @@
   </head>
   <body>
     <header>
-      <img src="./logo.png" style="max-height: 90%; width: 250px;"/>
+      <img src="./logo.png" class="logo"/>
       <nav>
         <ul>
-          <li><a href="#">about</a></li>
-          <li><a href="#">speakers</a></li>
-          <li><a href="#">program</a></li>
-          <li><a href="#">sponsors</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#speakers">speakers</a></li>
+          <li><a href="#sponsors">sponsors</a></li>
+          <li><a href="#contactus">contact us</a></li>
         </ul>
       </nav>
     </header>
     <section id="video-section" class="video-section">
-      <video id="video" src="./720_movie.mp4" poster="./poster2017.jpg" preload="auto" muted="true" loop>
+      <video id="video" src="./720_movie.mp4" poster="./poster2017.jpg" preload="none" muted="true" loop>
         Sorry, your browser doesn't support embedded videos.
       </video>
       <div class="video-subtitle">
@@ -43,31 +43,35 @@
         <small>Faculdade de Engenharia da Universidade do Porto</small>
       </div>
     </section>
-    <div class="commit-message">
+    <div id="about" class="commit-message">
       <p>
         <strong>Commit Porto</strong> is a tech conference that brings together professionals who tackle challenges in software development with the latest technologies. It is an excellent opportunity for knowledge sharing and inherently promoting Porto as a vibrant and dynamic city for technology-based companies!
       </p>
     </div>
     <div class="gallery-section">
-      <div class="image"><img src="http://commitporto.com/2016/images/3.jpg" /></div>
-      <div class="image"><img src="http://commitporto.com/2016/images/7sub2.jpg" /></div>
-      <div class="image"><img src="http://commitporto.com/2016/images/4.jpg" /></div>
-      <div class="image"><img src="http://commitporto.com/2016/images/11.jpg" /></div>
-      <div class="image"><img src="http://commitporto.com/2016/images/0.jpg" /></div>
-      <div class="image"><img src="http://commitporto.com/2016/images/7sub2.jpg" /></div>
-      <div class="image"><img src="http://commitporto.com/2016/images/4.jpg" /></div>
-      <a class="prev-edition" href="https://www.facebook.com/pg/CommitPorto/photos/?tab=album&album_id=1750607175226886" target="_blank">
-        Previous editions
+      <div class="image"><img src="./img/gallery/7.jpg" /></div>
+      <div class="image"><img src="./img/gallery/6.jpg" /></div>
+      <div class="image"><img src="./img/gallery/8.jpg" /></div>
+      <div class="image"><img src="./img/gallery/10.jpg" /></div>
+      <div class="image"><img src="./img/gallery/1.jpg" /></div>
+      <div class="image"><img src="./img/gallery/2.jpg" /></div>
+      <div class="image"><img src="./img/gallery/3.jpg" /></div>
+      <div class="image"><img src="./img/gallery/4.jpg" /></div>
+      <div class="image"><img src="./img/gallery/5.jpg" /></div>
+      <a class="see-more" href="https://www.facebook.com/pg/CommitPorto/photos/?tab=album&album_id=1750607175226886" target="_blank">
+        see more
       </a>
     </div>
     <div class="scroll-container">
       <div class="scroll"></div>
     </div>
+    <div class="prev-edition"><a href="/2016" target="_blank">2016</a>•<a href="/2015" target="_blank">2015</a></div>
     <div class="speakers-section">
       <h2 id="speakers">{ Speakers }</h2>
-      <div class="speakers-container">
-        <div class="speakers-table">
-          <div>Maciej Cegłowski</div>
+      <div class="speakers-container" style="justify-content: center;">
+        <div>to be announced ... </div>
+        <!-- <div class="speakers-table">
+          <div>Liliana Bernardino</div>
           <div>Lin Clark</div>
           <div>Jack Franklin</div>
           <div>Vitaly Friedman</div>
@@ -82,13 +86,12 @@
           <div>Chris Wright</div>
         </div>
         <div class="speakers-details">
-          <div class="speaker" data-name="Scaling music metadata distribution using Hadoop"
-            data-bio="Pedro is a backend engineer that has been working with Spotify's music metadata systems for the past 3 years. He has also worked at OutSystems and Portugal Telecom, after graduating from FEUP in 2010. Originally from the Porto area, you can now find him living in Stockholm. When not building software, Pedro will most likely be in the nearest swimming pool, enjoying some craft beer or travelling around the world."
-            data-talkDesc="New music metadata is added daily to Spotify's catalog, both from external providers and from internal sources of data. All the metadata for tracks, albums and artists needs to be processed and efficiently served to our users. As the amount of content increases, we need to adapt our backend to accommodate for the growth.
-            This talk will be focused on Spotify's backend for handling music metadata and on how we scaled one of the metadata datasets using Hadoop.">
-            <img src="http://commitporto.com/2016/images/speakers/lino_silva.jpg" />
-            <legend>Pedro Pacheco</legend>
-            <small>Software Engineer @ Spotify</small>
+          <div class="speaker" data-name="Analytics: I2B – Intelligence to Business"
+            data-bio="Mudou-se de Trás-os-Montes para o Porto em 1999 para ingressar no curso de Matemática Aplicada da Faculdade de Ciências da Universidade do Porto.<br />Em 2004 iniciou o seu percurso profissional como analista júnior na então designada Sonae Distribuição<br />Em 2007 Integrou a equipa de lançamento do Cartão Continente e em 2011 assume o cargo de Team Leader da equipa de Customer Intelligence<br />Dirige hoje o centro de Customer Intelligence & Analytics do Programa de Fidelização do Cartão Continente"
+            data-talkDesc="Analytics is changing... so is the world.<br />Data analytics can be a game changer for marketing organizations. A McKinsey’s study showed that companies in the top quartile of analytics usage were 20 times better at attracting new customers and more than 5 times better at retaining existing ones than firms in the bottom quartile.<br />However, many companies struggle to realize the full potential of their analytical efforts and face even more difficulties in realizing the power of a Customer Centric marketing strategy.<br />To add real value to business, marketing analytics solutions have to answer the questions on the minds of important decision makers and be part of their day-to-day work. And what decision makers want is a full and clear picture of what’s going on so they can make better decisions.<br />These pictures need however to be placed over real customer and business knowledge added with technical and advanced analytical skills. And this relies on people.<br />With the right techniques and skills companies can add extra power to their data and turn bytes into actions.<br />Companies need to adapt themselves to the new world... analytics can help them.">
+            <img src="./img/speakers/liliana.jpg" />
+            <legend>Liliana Bernardino</legend>
+            <small>Head of Analytics @ Sonae MC</small>
           </div>
           <div class="speaker">
             <img src="http://commitporto.com/2016/images/speakers/francisco_ferreira.jpg" />
@@ -143,41 +146,42 @@
         </div>
         <div id="talk" class="speaker-overlay">
           <div id="close">x</div>
-          <img id="speaker-photo" src=""/>
-          <div id="speaker-name"></div>
+          <div class="speaker-top">
+            <img id="speaker-photo" src=""/>
+            <div class="speaker-description">
+              <div id="speaker-name"></div>
+              <div id="bio"></div>
+            </div>
+          </div>
           <div id="talk-name"></div>
           <div id="talk-description"></div>
-          <div id="bio"></div>
-        </div>
+        </div>-->
       </div>
     </div>
-    <div class="registration-section">
+    <!-- <div class="registration-section">
       <p>Seção para formulário de inscrição</p>
-    </div>
+    </div> -->
+
     <div class="sponsors-section">
-      <h2>{ Sponsors }</h2>
+      <h2 id="sponsors">{ Sponsors }</h2>
       <div class="sponsors diamond">
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_blip2.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_farfetch.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_mog.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_getyourguide.png" /></div>
+        <div><img src="./img/sponsors/mindera.png" /></div>
       </div>
       <div class="sponsors gold">
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_getyourguide.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_mog.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_blip2.png" /></div>
+        <div><img src="./img/sponsors/farfetch.png" /></div>
+        <div><img src="./img/sponsors/synopsys.png" /></div>
+        <!-- indra -->
       </div>
       <div class="sponsors silver">
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_blip2.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_farfetch.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_blip2.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_farfetch.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_getyourguide.png" /></div>
-        <div><img src="http://commitporto.com/2016/images/partners/diamond_mog.png" /></div>
+        <div><img src="./img/sponsors/alticelabs.png" /></div>
+        <div><img src="./img/sponsors/bitmaker.png" /></div>
+        <div><img src="./img/sponsors/shiftforward.png" /></div>
+        <div><img src="./img/sponsors/lifeonmars.png" /></div>
       </div>
     </div>
-    <footer>
-      Contactos e logos de partners
+    <footer id="contactus">
+      <div>hello at commitporto.com • <a href="http://fb.com/commitporto" target="_blank">fb.com/commitporto</a> • <a href="http://twitter.com/commitporto" target="_blank">twitter.com/commitporto</a></div>
+      <small>powered by AlumniEI-FEUP</small>
     </footer>
     <script>
       const videoSection = document.getElementById("video-section");
@@ -198,9 +202,9 @@
           const attributes = e.currentTarget.dataset;
           document.getElementById('talk').classList.add("active");
           document.getElementById('speaker-photo').src = e.currentTarget.children[0].src;
-          document.getElementById('speaker-name').innerHTML = attributes.name;
+          document.getElementById('speaker-name').innerHTML = e.currentTarget.children[1].innerHTML;
           document.getElementById('talk-name').innerHTML = attributes.name;
-          document.getElementById('talk-description').innerHTML = attributes.talkDesc;
+          document.getElementById('talk-description').innerHTML = attributes.talkdesc;
           document.getElementById('bio').innerHTML = attributes.bio;
 
           document.getElementById('speakers').scrollIntoView({block: "start", behavior: "smooth"});
@@ -210,7 +214,6 @@
       document.getElementById('close').onclick = function(e) {
         document.getElementById('talk').classList.remove("active");
       }
-
     </script>
   </body>
 </html>
