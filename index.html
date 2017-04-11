@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Commit Porto '17</title>
     <meta name="description" content="Commit Porto is an IT multi-disciplinary conference will be held for the second time. It will bring together IT professionals from different areas talking about their experience tackling challenges with the latest technologies, providing an excellent opportunity for knowledge sharing and inherently promoting Porto as a vibrant and dynamic city for technology-based companies.">
     <meta property="og:url" content="http://commitporto.com" />
@@ -10,42 +9,282 @@
     <meta property="og:description" content="Commit Porto is an IT multi-disciplinary conference will be held for the second time. It will bring together IT professionals from different areas talking about their experience tackling challenges with the latest technologies, providing an excellent opportunity for knowledge sharing and inherently promoting Porto as a vibrant and dynamic city for technology-based companies." />
     <meta property="og:image" content="http://commitporto.com/2015/images/vertical.png" />
     <link rel="shortcut icon" type="image/ico" href="favico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0"> <!-- to prevent zoom in on ios -->
     <link rel="stylesheet" type="text/css" href="./style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Slab:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Slab|Josefin+Sans:400,600,700" rel="stylesheet">
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-62857310-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-62857310-1', 'auto');
+    ga('send', 'pageview');
     </script>
   </head>
-	<body>
-    <div id="landing">
-			<video id="video" src="./720_movie.mp4" poster="./video-snap.png" autoplay preload="auto" muted="true" loop>
-				Sorry, your browser doesn't support embedded videos.
-			</video>
-      <div id="layer-logo"></div>
-      <div id="homepage">
-        <div class="data normal-text fancy">June 3</div>
-        <div class="actions">
-          <input id="call-for-sponsors" class="hidden" type="checkbox" />
-          <label class="hide-on-call-for-sponsors button main-btn" for="call-for-sponsors">Call for sponsors</label>
-          <input id="sponsor-name" class="sponsors-input show-on-call-for-sponsors" type="text" autofocus placeholder="your name" />
-          <input id="sponsor-email" class="sponsors-input show-on-call-for-sponsors" type="email" placeholder="your email" />
-          <button id="sponsor-submit" class="button main-btn show-on-call-for-sponsors disabled">Send</button>
-          <label class="show-on-call-for-sponsors link" for="call-for-sponsors">Cancel</label>
+  <body>
+    <header>
+      <img src="./logo.png" class="logo"/>
+      <nav>
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#speakers">speakers</a></li>
+          <li><a href="#sponsors">sponsors</a></li>
+          <li><a href="#contactus">contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="video-section" class="video-section">
+      <img src="./poster2017.jpg"/>
+      <video id="video" src="./720_movie.mp4" poster="./poster2017.jpg" preload="none" muted="true" loop>
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <div class="video-subtitle">
+        <h2 class="typewriter">June 3, 2017</h2>
+        <small>Faculdade de Engenharia da Universidade do Porto</small>
+      </div>
+    </section>
+    <div id="about" class="commit-message">
+      <p>
+        <strong>Commit Porto</strong> is a tech conference that brings together professionals who tackle challenges in software development with the latest technologies. It is an excellent opportunity for knowledge sharing and inherently promoting Porto as a vibrant and dynamic city for technology-based companies!
+      </p>
+    </div>
+    <div class="gallery-section section">
+      <div class="image"><img src="./img/gallery/7.jpg" /></div>
+      <div class="image"><img src="./img/gallery/6.jpg" /></div>
+      <div class="image"><img src="./img/gallery/8.jpg" /></div>
+      <div class="image"><img src="./img/gallery/10.jpg" /></div>
+      <div class="image"><img src="./img/gallery/1.jpg" /></div>
+      <div class="image"><img src="./img/gallery/2.jpg" /></div>
+      <div class="image"><img src="./img/gallery/3.jpg" /></div>
+      <div class="image"><img src="./img/gallery/4.jpg" /></div>
+      <div class="image"><img src="./img/gallery/5.jpg" /></div>
+      <a class="see-more" href="https://www.facebook.com/pg/CommitPorto/photos/?tab=album&album_id=1750607175226886" target="_blank">
+        see more
+      </a>
+    </div>
+    <div class="scroll-container">
+      <div class="scroll"></div>
+    </div>
+    <div class="prev-edition"><a href="/2016" target="_blank">2016</a>•<a href="/2015" target="_blank">2015</a></div>
+    <div class="speakers-section section">
+      <h2 id="speakers">{ Speakers }</h2>
+      <div class="speakers-container" style="justify-content: center;">
+        <div>to be announced ... </div>
+        <!-- <div class="speakers-table">
+          <div>Liliana Bernardino</div>
+          <div>Lin Clark</div>
+          <div>Jack Franklin</div>
+          <div>Vitaly Friedman</div>
+          <div>Ola Gasidlo</div>
+          <div>Zoe Mickley Gillenwater</div>
+          <div>Patrick Hamann</div>
+          <div>Phil Hawksworth</div>
+          <div>Val Head</div>
+          <div>Una Kravets</div>
+          <div>Vadim Makeev</div>
+          <div>Max Stoiber</div>
+          <div>Chris Wright</div>
         </div>
-        <div id="success-message" class="hidden">Thanks, we will contact you as soon as possible!</div>
-        <div class="by">
-          <a href="./2016" class="normal-text">2016</a><span class="normal-text"> | </span><a href="./2015" class="normal-text">2015</a>
-          <div class="normal-text">powered by alumniEI-FEUP</div>
+        <div class="speakers-details">
+          <div class="speaker" data-name="Analytics: I2B – Intelligence to Business"
+            data-bio="Mudou-se de Trás-os-Montes para o Porto em 1999 para ingressar no curso de Matemática Aplicada da Faculdade de Ciências da Universidade do Porto.<br />Em 2004 iniciou o seu percurso profissional como analista júnior na então designada Sonae Distribuição<br />Em 2007 Integrou a equipa de lançamento do Cartão Continente e em 2011 assume o cargo de Team Leader da equipa de Customer Intelligence<br />Dirige hoje o centro de Customer Intelligence & Analytics do Programa de Fidelização do Cartão Continente"
+            data-talkDesc="Analytics is changing... so is the world.<br />Data analytics can be a game changer for marketing organizations. A McKinsey’s study showed that companies in the top quartile of analytics usage were 20 times better at attracting new customers and more than 5 times better at retaining existing ones than firms in the bottom quartile.<br />However, many companies struggle to realize the full potential of their analytical efforts and face even more difficulties in realizing the power of a Customer Centric marketing strategy.<br />To add real value to business, marketing analytics solutions have to answer the questions on the minds of important decision makers and be part of their day-to-day work. And what decision makers want is a full and clear picture of what’s going on so they can make better decisions.<br />These pictures need however to be placed over real customer and business knowledge added with technical and advanced analytical skills. And this relies on people.<br />With the right techniques and skills companies can add extra power to their data and turn bytes into actions.<br />Companies need to adapt themselves to the new world... analytics can help them.">
+            <img src="./img/speakers/liliana.jpg" />
+            <legend>Liliana Bernardino</legend>
+            <small>Head of Analytics @ Sonae MC</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/francisco_ferreira.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/joao_cravo.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/fabio_oliveira.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+          <div class="speaker">
+            <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
+            <legend>Pedro Pacheco</legend>
+            <small>Software Engineer @ Spotify</small>
+          </div>
+        </div>
+        <div id="talk" class="speaker-overlay">
+          <div id="close">x</div>
+          <div class="speaker-top">
+            <img id="speaker-photo" src=""/>
+            <div class="speaker-description">
+              <div id="speaker-name"></div>
+              <div id="bio"></div>
+            </div>
+          </div>
+          <div id="talk-name"></div>
+          <div id="talk-description"></div>
+        </div>-->
+      </div>
+    </div>
+    <!-- <div class="registration-section section">
+      <p>Seção para formulário de inscrição</p>
+    </div> -->
+    <div class="sponsors-section section">
+      <h2 id="sponsors">{ Sponsors }</h2>
+      <div class="sponsors diamond">
+        <div>
+          <a href="http://mindera.com" title="Mindera - Software Craft" target="_blank"><img src="./img/sponsors/mindera.png" /></a>
         </div>
       </div>
-		</div>
 
-    <script type="text/javascript" src="./script.js"></script>
+      <div class="sponsors gold">
+        <div>
+          <a href="http://www.farfetch.com" title="Farfetch - Designer Luxury Fashion for Men & Women" target="_blank"><img src="./img/sponsors/farfetch.png" /></a>
+        </div>
+        <div>
+          <a href="http://www.synopsys.com" title="Synopsys" target="_blank"><img src="./img/sponsors/synopsys.png" /></a>
+        </div>
+        <div>
+          <a href="http://www.indracompany.com" title="Indra" target="_blank"><img src="./img/sponsors/indra.png" /></a>
+        </div>
+      </div>
+
+      <div class="sponsors silver">
+        <div>
+          <a href="http://www.alticelabs.com" title="Altice Labs" target="_blank"><img src="./img/sponsors/altice.png" /></a>
+        </div>
+        <div>
+          <a href="http://www.bitmaker-software.com" title="Bitmaker Software" target="_blank"><img src="./img/sponsors/bitmaker.png" /></a>
+        </div>
+        <div>
+          <a href="http://shiftforward.eu" title="ShiftForward - online advertising technology" target="_blank"><img src="./img/sponsors/shiftforward.png" /></a>
+        </div>
+        <div>
+          <a href="http://lifeonmars.pt" title="Life on Mars" target="_blank"><img src="./img/sponsors/lifeonmars.png" /></a>
+        </div>
+        <div>
+          <a href="http://www.cldware.com" title="Cloudware - Better online experiences" target="_blank"><img src="./img/sponsors/cloudware.jpg" /></a>
+        </div>
+      </div>
+      <div class="sponsor-actions">
+        <input id="call-for-sponsors" type="checkbox" />
+        <label class="hide-on-call-for-sponsors" for="call-for-sponsors">Join this list of sponsors <strong>now</strong>!</label>
+        <input id="sponsor-name" class="sponsors-input show-on-call-for-sponsors" type="text" autofocus placeholder="your name" />
+        <input id="sponsor-email" class="sponsors-input show-on-call-for-sponsors" type="email" placeholder="your email" />
+        <button id="sponsor-submit" class="button main-btn show-on-call-for-sponsors disabled">Send</button>
+        <label class="show-on-call-for-sponsors cancel" for="call-for-sponsors">cancel</label>
+        <div id="success-message">Thanks, we will contact you as soon as possible!</div>
+      </div>
+    </div>
+    <footer id="contactus">
+      <div>hello at commitporto.com • <a href="http://fb.com/commitporto" target="_blank">fb.com/commitporto</a> • <a href="http://twitter.com/commitporto" target="_blank">twitter.com/commitporto</a></div>
+      <small>powered by AlumniEI-FEUP</small>
+    </footer>
+    <script>
+      const videoSection = document.getElementById("video-section");
+      const video = document.getElementById("video");
+      const speakers = document.getElementsByClassName("speaker");
+      const name = document.getElementById("sponsor-name");
+      const email = document.getElementById("sponsor-email");
+      const submit = document.getElementById("sponsor-submit");
+
+      videoSection.onmouseenter = function() {
+        video.play();
+      };
+      videoSection.onmouseout = function(e) {
+        if(!videoSection.contains(e.toElement)) {
+          video.pause();
+        }
+      };
+
+      Array.from(speakers).forEach(function (speaker) {
+        speaker.onclick = function(e) {
+          const attributes = e.currentTarget.dataset;
+          document.getElementById('talk').classList.add("active");
+          document.getElementById('speaker-photo').src = e.currentTarget.children[0].src;
+          document.getElementById('speaker-name').innerHTML = e.currentTarget.children[1].innerHTML;
+          document.getElementById('talk-name').innerHTML = attributes.name;
+          document.getElementById('talk-description').innerHTML = attributes.talkdesc;
+          document.getElementById('bio').innerHTML = attributes.bio;
+
+          document.getElementById('speakers').scrollIntoView({block: "start", behavior: "smooth"});
+        }
+      });
+
+      // document.getElementById('close').onclick = function(e) {
+      //   document.getElementById('talk').classList.remove("active");
+      // }
+
+      submit.onclick = function(e) {
+        if(name.value && email.value) {
+          const url = "https://hooks.slack.com/services/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";
+          const xhr = new XMLHttpRequest();
+          const data = JSON.stringify({"text": `Chamo-me ${name.value} e quero patrocinar a commitporto:commitporto:! Enviem-me o prospectus para: ${email.value} (cc @smorais @jadir @simaob)`});
+
+          xhr.open("POST", url, true);
+          xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          xhr.send(data);
+          submit.classList.add('disabled');
+
+          xhr.onreadystatechange = () => {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+              const callForSponsors = document.getElementById('call-for-sponsors');
+              const successMessage = document.getElementById('success-message');
+
+              callForSponsors.click();
+              successMessage.classList.add('visible');
+
+              name.value = '';
+              email.value = '';
+            }
+          }
+        }
+      }
+
+      toggleSendButton = function() {
+        if(name.value && email.value) {
+          submit.classList.remove('disabled');
+        } else {
+          submit.classList.add('disabled');
+        }
+      }
+
+      name.oninput = toggleSendButton;
+      email.oninput = toggleSendButton;
+
+    </script>
   </body>
 </html>
