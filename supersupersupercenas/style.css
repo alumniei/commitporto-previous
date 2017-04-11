@@ -37,14 +37,17 @@ h2 {
   font-weight: bold;
 }
 
-.gallery-section,
-.speakers-section,
-.sponsors-section,
-.registration-section {
+.section {
   margin-top: 100px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .section {
+    margin-top: 50px;
+  }
 }
 
 /** header **/
@@ -88,7 +91,8 @@ nav ul li:hover {
   margin: 0 auto;
 }
 
-.video-section video {
+.video-section video,
+.video-section img {
   min-height: 100%;
   min-width: 100%;
   max-width: 90%;
@@ -99,6 +103,7 @@ nav ul li:hover {
   position: absolute;
   bottom: 15%;
   left: 10%;
+  right: 10%;
   transform: translateY(-50%);
   color: white;
 }
@@ -214,7 +219,7 @@ nav ul li:hover {
   height: 100%;
   background-color: #f7931d;
   position: absolute;
-  top: -20px;
+  top: -30px;
   transform: translateX(-50%);
   z-index: 2;
   left: 50%;
@@ -393,6 +398,7 @@ nav ul li:hover {
 /** Sponsors section **/
 .sponsors {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
@@ -430,4 +436,49 @@ footer,
 footer a,
 footer a:visited {
   color: white;
+}
+
+/** small screen **/
+@media (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  nav,
+  #video-section video {
+    display: none;
+  }
+
+  .video-subtitle .typewriter {
+    font-size: 3em;
+  }
+
+  .commit-message {
+    width: 95%;
+    margin-top: -10px;
+    padding: 10px;
+  }
+
+  .diamond img {
+    max-width: 200px;
+  }
+
+  .gold img {
+    max-width: 180px;
+  }
+
+  .silver img {
+    max-width: 150px;
+  }
+}
+
+@media (min-width: 900px) {
+  #video-section img {
+    display: none;
+  }
 }
