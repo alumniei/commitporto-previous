@@ -29,6 +29,35 @@ h2 {
   margin-bottom: 50px;
 }
 
+.button {
+  cursor: pointer;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 2%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 0;
+  display: inline-block;
+  align-items: flex-start;
+  background: #f7931d;
+}
+
+.button.disabled {
+  background: #949494;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #737373;
+}
+
+.button:active,
+input:active,
+input,
+.button {
+  outline: 0;
+}
+
 .button, .fancy, h1, h2, h3 {
   font-family: 'Josefin Slab', cursive;
 }
@@ -425,6 +454,61 @@ nav ul li:hover {
 }
 
 /** footer **/
+.sponsor-actions {
+  margin-bottom: 40px;
+}
+.sponsor-actions input[type="checkbox"] {
+  display: none;
+}
+
+.sponsor-actions label {
+  cursor: pointer;
+}
+
+.show-on-call-for-sponsors {
+  display: none;
+}
+
+#sponsor-name {
+  width: 150px;
+}
+
+#sponsor-email {
+  width: 200px;
+}
+
+.sponsors-input {
+  background: transparent;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: #4c4c4c;
+  color: #4c4c4c;
+  border-width: 1px;
+  margin-right: 15px;
+  padding: 5px 0;
+}
+
+#call-for-sponsors:checked ~ label  {
+  display: none;
+}
+
+#call-for-sponsors:checked ~ .show-on-call-for-sponsors  {
+  display: initial;
+}
+
+#success-message {
+  display: none;
+}
+
+#success-message.visible {
+  display: block;
+}
+
+.cancel {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
 footer {
   text-align: center;
   padding: 20px;
