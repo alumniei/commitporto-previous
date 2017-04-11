@@ -162,6 +162,10 @@ nav ul li:hover {
   position: relative;
 }
 
+.gallery-section::-webkit-scrollbar {
+    display: none;
+}
+
 .gallery-section > .image {
   display: inline-block;
 }
