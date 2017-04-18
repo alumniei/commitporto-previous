@@ -69,11 +69,11 @@
     <div class="prev-edition"><a href="/2016" target="_blank">2016</a>•<a href="/2015" target="_blank">2015</a></div>
     <div class="speakers-section section">
       <h2 id="speakers">{ Speakers }</h2>
-      <div class="speakers-container" style="justify-content: center;">
-        <div>to be announced ... </div>
-        <!-- <div class="speakers-table">
-          <div>Liliana Bernardino</div>
-          <div>Lin Clark</div>
+      <div class="speakers-container">
+        <!-- <div>to be announced ... </div> -->
+        <!-- <div class="speakers-table"> -->
+          <!-- <div>Pedro Ferreira</div> -->
+          <!-- <div>Lin Clark</div>
           <div>Jack Franklin</div>
           <div>Vitaly Friedman</div>
           <div>Ola Gasidlo</div>
@@ -84,17 +84,17 @@
           <div>Una Kravets</div>
           <div>Vadim Makeev</div>
           <div>Max Stoiber</div>
-          <div>Chris Wright</div>
-        </div>
+          <div>Chris Wright</div> -->
+        <!-- </div> -->
         <div class="speakers-details">
-          <div class="speaker" data-name="Analytics: I2B – Intelligence to Business"
-            data-bio="Mudou-se de Trás-os-Montes para o Porto em 1999 para ingressar no curso de Matemática Aplicada da Faculdade de Ciências da Universidade do Porto.<br />Em 2004 iniciou o seu percurso profissional como analista júnior na então designada Sonae Distribuição<br />Em 2007 Integrou a equipa de lançamento do Cartão Continente e em 2011 assume o cargo de Team Leader da equipa de Customer Intelligence<br />Dirige hoje o centro de Customer Intelligence & Analytics do Programa de Fidelização do Cartão Continente"
-            data-talkDesc="Analytics is changing... so is the world.<br />Data analytics can be a game changer for marketing organizations. A McKinsey’s study showed that companies in the top quartile of analytics usage were 20 times better at attracting new customers and more than 5 times better at retaining existing ones than firms in the bottom quartile.<br />However, many companies struggle to realize the full potential of their analytical efforts and face even more difficulties in realizing the power of a Customer Centric marketing strategy.<br />To add real value to business, marketing analytics solutions have to answer the questions on the minds of important decision makers and be part of their day-to-day work. And what decision makers want is a full and clear picture of what’s going on so they can make better decisions.<br />These pictures need however to be placed over real customer and business knowledge added with technical and advanced analytical skills. And this relies on people.<br />With the right techniques and skills companies can add extra power to their data and turn bytes into actions.<br />Companies need to adapt themselves to the new world... analytics can help them.">
-            <img src="./img/speakers/liliana.jpg" />
-            <legend>Liliana Bernardino</legend>
-            <small>Head of Analytics @ Sonae MC</small>
+          <div class="speaker" data-name="Why is C++ relevant again?"
+            data-bio="Pedro Ferreira was born in Guimarães in 1973. He has an MSc in Telecommunications and Computers and his professional career has always been linked to the broadcasting industry, firstly as a researcher at INESC Porto, then as a co-founder of MOG.<br/>He enjoys not only programming and programming languages, but also enjoys learning and sharing knowledge. That’s why he’s trainer at EUROVISION and is looking forward to Commit Porto 2017."
+            data-talkDesc="The web said C++ is dead, however, C++ ranks very high on the usage indices and is growing.<br/>Why? Performance still matters, so, believe it or not, battery life and data center cooling are major drivers behind this.<br/>This talk will present how C++ has evolved, how it lends itself to multicore-friendly paradigms such as functional programming, and how it is being used by companies like Facebook and others to gain efficiency both on the data center and on the mobile phone.">
+            <img src="./img/speakers/pedro_ferreira.png" />
+            <legend>Pedro Ferreira</legend>
+            <small>CTO @ MOG</small>
           </div>
-          <div class="speaker">
+          <!-- <div class="speaker">
             <img src="http://commitporto.com/2016/images/speakers/francisco_ferreira.jpg" />
             <legend>Pedro Pacheco</legend>
             <small>Software Engineer @ Spotify</small>
@@ -143,7 +143,7 @@
             <img src="http://commitporto.com/2016/images/speakers/andre_duarte.jpg" />
             <legend>Pedro Pacheco</legend>
             <small>Software Engineer @ Spotify</small>
-          </div>
+          </div> -->
         </div>
         <div id="talk" class="speaker-overlay">
           <div id="close">x</div>
@@ -156,7 +156,7 @@
           </div>
           <div id="talk-name"></div>
           <div id="talk-description"></div>
-        </div>-->
+        </div>
       </div>
     </div>
     <!-- <div class="registration-section section">
@@ -244,9 +244,9 @@
         }
       });
 
-      // document.getElementById('close').onclick = function(e) {
-      //   document.getElementById('talk').classList.remove("active");
-      // }
+      document.getElementById('close').onclick = function(e) {
+        document.getElementById('talk').classList.remove("active");
+      }
 
       submit.onclick = function(e) {
         if(name.value && email.value) {
