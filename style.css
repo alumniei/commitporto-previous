@@ -421,7 +421,8 @@ nav ul li:hover {
   transform:  rotate(-2deg) scale(1) skew(0) translate(0px);
 }
 
-.registration-section p {
+.registration-section p,
+.registration-section .typeform-widget {
   text-rendering: optimizeLegibility;
   transform: rotate(2deg) scale(1) skew(0) translate(0px);
 }
