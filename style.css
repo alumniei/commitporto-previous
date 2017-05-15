@@ -444,6 +444,11 @@ nav ul li:hover {
   padding: 0 40px;
 }
 
+.sponsors div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .diamond img {
   max-height: 200px;
   max-width: 300px;
