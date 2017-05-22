@@ -281,17 +281,54 @@ nav ul li:hover {
 }
 
 .speakers-table {
-  border-bottom: 1px solid #f7931d;
-  border-right: 5px solid #f7931d;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  width: 30%;
 }
 
-.speakers-table div {
+.speakers-details {
+  width: 70%;
+}
+
+.speaker-table-time {
+  display: flex;
+}
+
+.speaker-time-name {
+  padding-top: 10px;
   padding-right: 20px;
+  border-right: 2px solid #f7931d;
   text-align: right;
-  white-space: nowrap;
+  width: 60%;
+}
+
+.speaker-time-description,
+.speaker-time {
+  font-size: 12px;
+}
+
+.break {
+  font-weight: bold;
+}
+
+.speaker-time {
+  padding-top: 10px;
+  font-size: 12px;
+  padding-left: 20px;
+  text-align: left;
+  width: 40%;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.speaker-time:before {
+  content: '';
+  position: absolute;
+  left: -1px; //50% border-width
+  padding: 5px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 2px solid #f7931d;
+  background: white;
+  padding: 3px;
 }
 
 .speaker {
@@ -573,6 +610,21 @@ footer a:visited {
 
   .typeform-widget {
     display: none;
+  }
+
+  .speakers-container,
+  .speaker-top {
+    flex-direction: column;
+  }
+
+  .speakers-details,
+  .speakers-table {
+    width: 100%;
+  }
+
+  .speaker-description {
+    padding-left: 0;
+    padding-top: 20px;
   }
 }
 
