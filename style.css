@@ -460,9 +460,7 @@ nav ul li:hover {
   color: white;
 }
 
-.registration-section .registration-small,
-.registration-section .typeform-widget,
-.registration-section .registration-small {
+.registration-section p {
   text-rendering: optimizeLegibility;
   transform: rotate(2deg) scale(1) skew(0) translate(0px);
 }
