@@ -37,7 +37,11 @@ h1 {
 }
 
 .button, h1, h2, h3 {
-  font-weight: Light;
+  font-weight: bold;
+}
+
+.fancy{
+  font-weight: 300;
 }
 
 .logo-aluminiei{
