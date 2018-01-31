@@ -29,7 +29,8 @@ h1 {
 
 .fancy{
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.9;
+  margin-bottom: 3%;
 }
 
 .button, h1, h2, h3 {
@@ -85,12 +86,13 @@ h1 {
 }
 
 #homepage .data {
-  bottom: 37%;
   text-align: center;
+  margin: 0 auto;
+  top: 54%;
 }
 
 #homepage .actions {
-  bottom: 20%;
+  bottom: 25%;
 }
 
 #homepage .by {
@@ -142,8 +144,15 @@ input,
 }
 
 .button.main-btn {
-  color: #000;
-  background: #fff;
+  color: #fff;
+
+  /*background: #fff;*/
+  border: 1.5px solid #fff;
+}
+
+.button.main-btn:hover{
+  background: rgba(257,257,257,0.2);
+  text-decoration: none;
 }
 
 .link-footer, .link-footer:visited{
@@ -165,12 +174,12 @@ input,
 
 .small-text,
 .button.main-btn {
-  font-size: 0.8em;
+  font-size: 70%;
 }
 
 .medium-text,
 #homepage .data {
-  font-size: 160%;
+  font-size: 120%;
 }
 
 #sponsor-name {
