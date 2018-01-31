@@ -150,7 +150,18 @@ input,
   border: 1.5px solid #fff;
 }
 
-.button.main-btn:hover{
+#sponsor-submit{
+  color: #fff;
+  background: rgba(257,257,257,0);
+  border: 1.5px solid #fff;
+}
+
+#sponsor-submit:hover, #sponsor-subimit:visited{
+  background: rgba(257,257,257,0.2);
+  text-decoration: none;
+}
+
+.button.main-btn:hover,.button.main-btn:visited{
   background: rgba(257,257,257,0.2);
   text-decoration: none;
 }
@@ -209,15 +220,37 @@ input,
 
 #success-message {
   padding: 5px;
-  color: #f7941e;
+  color: #33955e;
 }
 
 #faq-body {
   width: 60%;
   margin: 0 auto;
   padding: 50px 0 50px;
+  color: black;
+}
+
+#faq-body > *{
+  color: black;
+}
+
+#faq-body > * > *{
+  color: black;
 }
 
 #messenger{
   font-family: monospace;
+}
+
+.header-call-for-speakers{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+#faq-body > h3 {
+  color: #33955e;
+}
+
+#faqs{
+  margin-bottom: 2%;
 }
