@@ -8,7 +8,8 @@ It is an excellent opportunity to knowledge sharing and inherently promote Porto
 
 * [Commit Porto '15](http://commitporto.com/2015)
 * [Commit Porto '16](http://commitporto.com/2016)
-* [Commit Porto '17](http://commitporto.com)
+* [Commit Porto '17](http://commitporto.com/2017)
+* [Commit Porto '18](http://commitporto.com)
 
 ## Organizers
 
