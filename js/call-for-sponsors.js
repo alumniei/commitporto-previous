@@ -6,7 +6,7 @@ submit.onclick = () => {
   if(name.value && email.value) {
     const url = "https://hooks.slack.com/services/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";
     const xhr = new XMLHttpRequest();
-    const data = JSON.stringify({"text": `Chamo-me ${name.value} e quero patrocinar a commitporto:commitporto:! Enviem-me o prospectus para: ${email.value} (cc @smorais @jadir @simaob)`});
+    const data = JSON.stringify({"text": `Chamo-me ${name.value} e quero patrocinar a commitporto:commitporto:! Enviem-me o prospectus para: ${email.value} (cc <!here>)`});
 
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
