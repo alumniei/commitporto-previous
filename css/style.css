@@ -227,30 +227,25 @@ input,
   width: 60%;
   margin: 0 auto;
   padding: 50px 0 50px;
+}
+
+#faq-body, #faq-body * {
   color: black;
 }
 
-#faq-body > *{
-  color: black;
-}
-
-#faq-body > * > *{
-  color: black;
-}
-
-#messenger{
+#messenger {
   font-family: monospace;
 }
 
-.header-call-for-speakers{
+.header-call-for-speakers {
   margin-bottom: 10%;
   margin-top: 10%;
 }
 
-#faq-body > h3 {
+#faq-body > h3, #faq-body s {
   color: #33955e;
 }
 
-#faqs{
+#faqs {
   margin-bottom: 2%;
 }
