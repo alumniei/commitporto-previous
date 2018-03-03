@@ -511,10 +511,6 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-.show-on-call-for-sponsors {
-  display: none;
-}
-
 #sponsor-name {
   width: 150px;
 }
@@ -534,7 +530,15 @@ nav ul li:hover {
   padding: 5px 0;
 }
 
-#call-for-sponsors:checked ~ label  {
+.show-on-call-for-sponsors {
+  display: none;
+}
+
+.show-on-call-for-sponsors {
+  display: none;
+}
+
+#call-for-sponsors:checked ~ .hide-on-call-for-sponsors  {
   display: none;
 }
 
@@ -542,8 +546,14 @@ nav ul li:hover {
   display: initial;
 }
 
+#success-message.visible ~ .show-on-call-for-sponsors {
+  display: none;
+}
+
 #success-message {
   display: none;
+  padding: 5px;
+  color: #33955e;
 }
 
 #success-message.visible {

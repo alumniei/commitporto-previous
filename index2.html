@@ -339,13 +339,13 @@ For a little over a decade now, he has been fortunate to work on diverse project
       </div>
 
       <div class="sponsor-actions">
+        <div id="success-message">Thanks, we will contact you as soon as possible!</div>
         <input id="call-for-sponsors" type="checkbox" />
         <label class="hide-on-call-for-sponsors" for="call-for-sponsors">Join this list of sponsors <strong>now</strong>!</label>
         <input id="sponsor-name" class="sponsors-input show-on-call-for-sponsors" type="text" autofocus placeholder="your name" />
         <input id="sponsor-email" class="sponsors-input show-on-call-for-sponsors" type="email" placeholder="your email" />
         <button id="sponsor-submit" class="button main-btn show-on-call-for-sponsors disabled">Send</button>
         <label class="show-on-call-for-sponsors cancel" for="call-for-sponsors">cancel</label>
-        <div id="success-message">Thanks, we will contact you as soon as possible!</div>
       </div>
     </div>
     <!--div class="section">
@@ -369,83 +369,9 @@ For a little over a decade now, he has been fortunate to work on diverse project
       <div>hello at commitporto.com • <a href="http://fb.com/commitporto" target="_blank">fb.com/commitporto</a> • <a href="http://twitter.com/commitporto" target="_blank">twitter.com/commitporto</a></div>
       <small>powered by AlumniEI-FEUP</small>
     </footer>
-    <script>
-      const videoSection = document.getElementById("video-section");
-      const video = document.getElementById("video");
-      const speakers = document.getElementsByClassName("speaker");
-      const name = document.getElementById("sponsor-name");
-      const email = document.getElementById("sponsor-email");
-      const submit = document.getElementById("sponsor-submit");
 
-      videoSection.onmouseenter = function() {
-        video.play();
-      };
-      videoSection.onmouseout = function(e) {
-        if(!videoSection.contains(e.toElement)) {
-          video.pause();
-        }
-      };
-
-      Array.from(speakers).forEach(function (speaker) {
-        speaker.onclick = function(e) {
-          const attributes = e.currentTarget.dataset;
-          document.getElementById('talk').classList.add("active");
-          document.getElementById('speaker-photo').src = e.currentTarget.children[0].src;
-          document.getElementById('speaker-name').innerHTML = e.currentTarget.children[1].innerHTML;
-          document.getElementById('talk-name').innerHTML = attributes.name;
-          document.getElementById('talk-description').innerHTML = attributes.talkdesc;
-          if (attributes.talkvideo) {
-            document.getElementById('talk-video').href = attributes.talkvideo;
-          } else {
-            document.getElementById('talk-video').style.display = 'none';
-          }
-          document.getElementById('bio').innerHTML = attributes.bio;
-
-          document.getElementById('speakers').scrollIntoView({block: "start", behavior: "smooth"});
-        }
-      });
-
-      document.getElementById('close').onclick = function(e) {
-        document.getElementById('talk').classList.remove("active");
-      }
-
-      submit.onclick = function(e) {
-        if(name.value && email.value) {
-          const url = "https://hooks.slack.com/services/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";
-          const xhr = new XMLHttpRequest();
-          const data = JSON.stringify({"text": `Chamo-me ${name.value} e quero patrocinar a commitporto:commitporto:! Enviem-me o prospectus para: ${email.value} (cc @smorais @jadir @simaob)`});
-
-          xhr.open("POST", url, true);
-          xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-          xhr.send(data);
-          submit.classList.add('disabled');
-
-          xhr.onreadystatechange = () => {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-              const callForSponsors = document.getElementById('call-for-sponsors');
-              const successMessage = document.getElementById('success-message');
-
-              callForSponsors.click();
-              successMessage.classList.add('visible');
-
-              name.value = '';
-              email.value = '';
-            }
-          }
-        }
-      }
-
-      toggleSendButton = function() {
-        if(name.value && email.value) {
-          submit.classList.remove('disabled');
-        } else {
-          submit.classList.add('disabled');
-        }
-      }
-
-      name.oninput = toggleSendButton;
-      email.oninput = toggleSendButton;
-
-    </script>
+    <script src="./js/video.js" type="text/javascript"></script>
+    <!--script src="./js/speakers.js" type="text/javascript"></script-->
+    <script src="./js/call-for-sponsors.js" type="text/javascript"></script>
   </body>
 </html>
