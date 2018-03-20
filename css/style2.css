@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+
+}
+
 html, body {
   margin: 0;
   height: 100%;
@@ -23,6 +29,11 @@ h2 {
   margin-bottom: 50px;
 }
 
+#homepage .by {
+  bottom: 5%;
+  font-size: 1em;
+}
+
 .button {
   cursor: pointer;
   font-weight: bold;
@@ -35,7 +46,7 @@ h2 {
   border: 0;
   display: inline-block;
   align-items: flex-start;
-  background: #33955e;
+  background: #3CB371;
 }
 
 .button.disabled {
@@ -98,7 +109,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  border-color: #33955e;
+  border-color: #3CB371;
 }
 
 .logo {
@@ -144,7 +155,7 @@ nav ul li:hover {
 
 .typewriter {
   overflow: hidden;
-  border-right: 0 solid #33955e;
+  border-right: 0 solid #3CB371;
   white-space: nowrap;
   animation:
     typing 7s steps(30, end),
@@ -162,14 +173,14 @@ nav ul li:hover {
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #33955e; }
+  50% { border-color: #3CB371; }
 }
 
 .commit-message {
   text-align: center;
   line-height: 2.1;
   margin-top: -30px;
-  background: #33955e;
+  background: #3CB371;
   padding: 40px 50px;
   width: 65%;
   max-width: 1000px;
@@ -222,7 +233,7 @@ nav ul li:hover {
 .prev-edition {
   text-align: center;
   font-size: 1.5em;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .prev-edition a {
@@ -240,7 +251,7 @@ nav ul li:hover {
 .scroll {
   width: 100%;
   height: 100%;
-  background-color: #33955e;
+  background-color: #3CB371;
   position: absolute;
   top: -30px;
   transform: translateX(-50%);
@@ -254,7 +265,7 @@ nav ul li:hover {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #33955e;
+  background: #3CB371;
   display: block;
   transform: translateY(-50%);
   top: 50%;
@@ -295,7 +306,7 @@ nav ul li:hover {
 .speaker-time-name {
   padding-top: 10px;
   padding-right: 20px;
-  border-right: 2px solid #33955e;
+  border-right: 2px solid #3CB371;
   text-align: right;
   width: 60%;
 }
@@ -326,7 +337,7 @@ nav ul li:hover {
   padding: 5px;
   transform: translateX(-50%);
   border-radius: 50%;
-  border: 2px solid #33955e;
+  border: 2px solid #3CB371;
   background: white;
   padding: 3px;
 }
@@ -347,7 +358,7 @@ nav ul li:hover {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 50%;
-  border: 0 solid #33955e;
+  border: 0 solid #3CB371;
 }
 
 .speaker:hover::before {
@@ -501,7 +512,7 @@ nav ul li:hover {
 
 /** footer **/
 .sponsor-actions {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .sponsor-actions input[type="checkbox"] {
   display: none;
@@ -553,7 +564,7 @@ nav ul li:hover {
 #success-message {
   display: none;
   padding: 5px;
-  color: #33955e;
+  color: #3CB371;
 }
 
 #success-message.visible {
@@ -644,4 +655,197 @@ footer a:visited {
   .registration-small {
     display: none;
   }
+}
+
+
+
+/****/
+
+a.button {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fancy{
+  color: #fff;
+  opacity: 0.9;
+  margin-bottom: 3%;
+}
+
+.button, h1, h2, h3 {
+  font-weight: 300;
+}
+
+
+.logo-aluminiei{
+  max-width: 100px;
+  min-width: 50px;
+  opacity: 1;
+}
+
+#homepage .by {
+  bottom: 5%;
+  font-size: 1em;
+}
+
+.show-on-call-for-sponsors,
+.button.show-on-call-for-sponsors,
+.hidden {
+  display: none;
+}
+
+#call-for-sponsors:checked ~ .hide-on-call-for-sponsors  {
+  display: none;
+}
+
+#call-for-sponsors:checked ~ .show-on-call-for-sponsors  {
+  display: initial;
+}
+
+.button {
+  cursor: pointer;
+  font-weight: bold;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 0;
+  display: inline-block;
+  align-items: flex-start;
+}
+
+.button:active,
+input:active,
+input,
+.button {
+  outline: 0;
+}
+
+.button:not(:first-child) {
+  margin-left: 10px;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+#sponsor-submit{
+  background: rgba(257,257,257,0);
+ border: 1.5px solid #4c4c4c;
+}
+
+#sponsor-submit:hover, #sponsor-subimit:visited{
+  background: rgba(257,257,257,0.2);
+  text-decoration: none;
+}
+
+.button.main-btn:hover,.button.main-btn:visited{
+  background: rgba(257,257,257,0.2);
+  text-decoration: none;
+}
+
+.link-footer, .link-footer:visited{
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.fancy > a{
+  opacity: 1;
+}
+
+.link-footer:hover{
+  text-decoration: none;
+  color: #fff;
+  opacity: 1;
+}
+
+.hide-on-call-for-sponsors:hover{
+  color: rgba(76,76,76,0.7);
+}
+
+body > div.prev-edition > a:hover
+{
+  color: rgba(76,76,76,0.7);
+}
+
+
+.small-text,
+.button.main-btn {
+  font-size: 70%;
+}
+
+.medium-text,
+#homepage .data {
+  font-size: 120%;
+}
+
+#sponsor-name {
+  width: 150px;
+}
+
+#sponsor-email {
+  width: 200px;
+}
+.sponsors-input {
+  background: transparent;
+  border: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+  margin-right: 15px;
+  padding: 5px 0;
+}
+
+.button.disabled {
+  background: #949494;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #737373;
+}
+
+#success-message {
+  padding: 5px;
+  color: #33955e;
+}
+
+#faq-body {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+  color: black;
+}
+
+#faq-body > *{
+  color: black;
+}
+
+#faq-body > * > *{
+  color: black;
+}
+
+#messenger{
+  font-family: monospace;
+}
+
+.header-call-for-speakers{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+#faq-body > h3 {
+  color: #33955e;
+}
+
+#faqs{
+  margin-bottom: 2%;
 }
