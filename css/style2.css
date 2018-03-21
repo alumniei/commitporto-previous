@@ -199,6 +199,7 @@ nav ul li:hover {
   display: flex;
   overflow: scroll;
   position: relative;
+  padding-top: 20px;
 }
 
 .gallery-section::-webkit-scrollbar {
@@ -232,12 +233,11 @@ nav ul li:hover {
 
 .prev-edition {
   text-align: center;
-  font-size: 1.5em;
-  padding-top: 30px;
+  font-size: 1.2em;
 }
 
 .prev-edition a {
-  padding: 0 10px;
+  padding: 0 10px 0 10px;
 }
 
 /** scroll animation **/
