@@ -17,9 +17,7 @@ submit.onclick = () => {
       if (xhr.readyState == 4 && xhr.status == 200) {
         const callForSponsors = document.getElementById('call-for-sponsors');
         const successMessage = document.getElementById('success-message');
-
-        callForSponsors.click();
-        successMessage.classList.remove('hidden');
+        successMessage.classList.add('visible');
 
         name.value = '';
         email.value = '';
