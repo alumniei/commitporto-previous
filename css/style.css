@@ -296,7 +296,8 @@ nav ul li:hover {
 }
 
 .speakers-details {
-  width: 70%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .speaker-table-time {
@@ -465,6 +466,8 @@ nav ul li:hover {
 
 .registration-section h2 {
   margin: 0;
+  text-rendering: optimizeLegibility;
+  transform: rotate(2deg) scale(1) skew(0) translate(0px);
 }
 
 .registration-section a {
@@ -653,7 +656,7 @@ footer a:visited {
   }
 
   .registration-small {
-    display: none;
+    /*display: none;*/
   }
 }
 
