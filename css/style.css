@@ -398,7 +398,6 @@ nav ul li:hover {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   background: rgba(255, 255, 255, 0.95);
   display: none;
   z-index: 1; /* temp */
@@ -448,7 +447,7 @@ nav ul li:hover {
 
 #close {
   position: absolute;
-  right: 10%;
+  right: 0%;
   font-size: 2.5em;
   cursor: pointer;
 }
