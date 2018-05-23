@@ -3,6 +3,8 @@ const speakers = document.getElementsByClassName("speaker");
 Array.from(speakers).forEach(function (speaker) {
   speaker.onclick = function(e) {
     const attributes = e.currentTarget.dataset;
+    if (!attributes.name) return;
+
     document.getElementById('talk').classList.add("active");
     document.getElementById('speaker-photo').src = e.currentTarget.children[0].src;
     document.getElementById('speaker-name').innerHTML = e.currentTarget.children[1].innerHTML;
