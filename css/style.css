@@ -349,6 +349,8 @@ nav ul li:hover {
   position: relative;
   text-align: left;
   cursor: pointer;
+  vertical-align: top;
+  width: 250px;
 }
 
 .speaker:hover::before,
@@ -384,7 +386,7 @@ nav ul li:hover {
 }
 
 .speaker img {
-  height: 200px;
+  max-width: 100%;
   filter: sepia(0.4);
 }
 
