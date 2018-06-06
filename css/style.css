@@ -473,11 +473,24 @@ nav ul li:hover {
 
 .registration-section a {
   color: white;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.registration-section a:hover {
+  background-color: rgba(180, 218, 190, 0.5);
 }
 
 .registration-section p {
   text-rendering: optimizeLegibility;
   transform: rotate(2deg) scale(1) skew(0) translate(0px);
+}
+
+.note {
+  margin: 0 30%;
+  line-height: normal;
+  font-size: 11px;
+  color: #b4dabe;
 }
 
 /** Sponsors section **/
@@ -667,10 +680,6 @@ footer a:visited {
 
 a.button {
   text-decoration: none;
-}
-
-a:visited {
-  color: black;
 }
 
 h1 {
