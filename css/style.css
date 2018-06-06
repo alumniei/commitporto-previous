@@ -407,6 +407,12 @@ nav ul li:hover {
 
 .speaker-overlay.active {
   display: block;
+  height: 100%;
+}
+
+.speaker-frame {
+  margin: 0 250px;
+  position: relative;
 }
 
 .speaker-top {
