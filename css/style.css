@@ -15,6 +15,7 @@ html, body {
   color: #4c4c4c;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 a,
@@ -667,6 +668,10 @@ footer a:visited {
   .speaker-description {
     padding-left: 0;
     padding-top: 20px;
+  }
+
+  .speaker-frame {
+    margin: 0;
   }
 }
 
