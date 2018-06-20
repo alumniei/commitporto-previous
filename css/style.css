@@ -311,6 +311,7 @@ nav ul li:hover {
   border-right: 2px solid #3CB371;
   text-align: right;
   width: 60%;
+  cursor: pointer;
 }
 
 .speaker-time-description,
