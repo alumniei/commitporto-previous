@@ -68,3 +68,18 @@ main {
 .list--social .list__element img {
   height: 40px;
 }
+
+@media (max-width: 576px){
+  main {
+    font-size: 18px;
+  }
+
+  .list--social {
+    margin-top: 40px
+  }
+
+  .logo {
+    width: 90vw;
+  } 
+}
+
