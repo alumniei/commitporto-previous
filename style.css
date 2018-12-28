@@ -20,7 +20,7 @@ body {
   min-width: 100%;
   filter: blur(1px) grayscale(80%);
   position: absolute;
-  top: 65%;
+  top: 50%;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
