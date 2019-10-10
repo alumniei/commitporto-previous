@@ -6,11 +6,11 @@ It is an excellent opportunity to knowledge sharing and inherently promote Porto
 
 ## Editions
 
-* [Commit Porto '15](http://commitporto.com/2015)
-* [Commit Porto '16](http://commitporto.com/2016)
-* [Commit Porto '17](http://commitporto.com/2017)
-* [Commit Porto '18](http://commitporto.com/2018)
-* [Commit Porto '19](http://commitporto.com)
+* [Commit Porto '15](http://previous.commitporto.com/2015)
+* [Commit Porto '16](http://previous.commitporto.com/2016)
+* [Commit Porto '17](http://previous.commitporto.com/2017)
+* [Commit Porto '18](http://previous.commitporto.com/2018)
+* [Commit Porto '19](http://previous.commitporto.com/2019)
 
 ## Organizers
 
