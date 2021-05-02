@@ -11,6 +11,7 @@ It is an excellent opportunity to knowledge sharing and inherently promote Porto
 * [Commit Porto '17](http://previous.commitporto.com/2017)
 * [Commit Porto '18](http://previous.commitporto.com/2018)
 * [Commit Porto '19](http://previous.commitporto.com/2019)
+* [Commit Porto '20](http://previous.commitporto.com/2020)
 
 ## Organizers
 
